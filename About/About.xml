@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>Fallout Core</name>
-  <author>RamRod</author>
+  <name>Fallout Core - Weapons</name>
+  <author>ShaunYap</author>
   <supportedVersions>
-    <li>1.1</li>
+    <li>1.2</li>
   </supportedVersions>
   <description>Placeholder</description>
 </ModMetaData>
