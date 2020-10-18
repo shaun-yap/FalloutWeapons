@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallBosBlue</defName>
+    <label>Install BoS Blue</label>
+    <description>Repaint robot with Brotherhood of Steel blue paintjob.</description>
+    <workerClass>Recipe_Surgery</workerClass>
+    <jobString>Painting robot.</jobString>
+    <workAmount>1000</workAmount> 
+	<surgerySuccessChanceFactor>10</surgerySuccessChanceFactor>
+    <skillRequirements>
+    </skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>   
+	<fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<addsHediff>BosBlue</addsHediff>   
+  </RecipeDef>
+ 
+  	<HediffDef ParentName="ImplantHediffBase">
+		<defName>BosBlue</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>BoS blue paint</label>  
+		<description>Brotherhood of Steel blue paintjob with logo.</description>
+		<labelNoun>BoS blue paint</labelNoun>
+	</HediffDef>
+	
+	<!--Wtf dude-->
+</Defs>

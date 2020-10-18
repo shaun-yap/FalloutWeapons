@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseFalloutHumanMakeableGun">
+    <defName>FCP_HeavyEnergy_PlasmaCaster</defName>
+    <label>Plasma Caster</label>
+    <description>The plasma caster is a powerful energy weapon. Compared to its rifle-based counterpart, it outclasses it in both damage and fire rate. It pays for these advantages however in weight and accuracy: its far larger base spread is compounded by the insane skill and strength requirements to handle this weapon, and at 20 pounds it is the heaviest energy weapon.</description>
+    <graphicData>
+      <texPath>Things/EnergyHeavyWeapons/PlasmaCaster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>InteractMinigun</soundInteract>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>11.3</Mass>
+      <AccuracyTouch>0.64</AccuracyTouch>
+      <AccuracyShort>0.76</AccuracyShort>
+      <AccuracyMedium>0.71</AccuracyMedium>
+      <AccuracyLong>0.61</AccuracyLong>
+      <RangedWeapon_Cooldown>0.92</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>160</Steel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>11</Crafting>   
+		<Intellectual>11</Intellectual>
+      </skillRequirements>
+      <researchPrerequisite>FCPSuperConducted</researchPrerequisite>
+    </recipeMaker>
+ 	<weaponTags>
+      <li>GunHeavy</li>
+	  <li>Plasma</li>
+	  <li>BOS</li>	 
+	</weaponTags>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>FCP_Bullet_HeavyEnergy_PlasmaCaster</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <range>30.9</range>
+        <soundCast>ShotPlasmaCaster</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrels</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+	
+	<modExtensions>
+			<li Class="FCPEnergyFilth.DeathEffectModExtension">
+				<effectChance>0.60</effectChance>
+			</li>
+	</modExtensions>
+	
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>FCP_Bullet_HeavyEnergy_PlasmaCaster</defName>
+    <label>plasma bolt</label>
+    <graphicData>
+	<texPath>Effects/Plasma</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>     
+	  <drawSize>2</drawSize>
+    </graphicData> 
+    <projectile>
+      <damageDef>Plasmaburn</damageDef>
+      <damageAmountBase>32</damageAmountBase>
+	  <armorPenetrationBase>0.60</armorPenetrationBase>
+      <speed>35</speed>
+    </projectile>
+  </ThingDef>
+    
+  
+</Defs>

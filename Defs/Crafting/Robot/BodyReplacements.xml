@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>Thruster</defName>
+    <label>thruster</label>
+    <description>A robotic thruster capable of levitation that attaches to;
+Gutsy,
+Handy,
+Nurse Handy.</description>
+  <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+  
+   <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>RoboticHead</defName>
+    <label>robotic head</label>
+    <description>A robotic head that attaches to;
+Assaultron,
+Protectetron,
+Scrapbot,
+Securitron,
+Sentrybot.</description>
+  <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+  
+   <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>Buzzsaw</defName>
+    <label>buzzsaw</label>
+    <description>A robotic buzzsaw capable of cutting flesh that attaches to;
+Gutsy,
+Handy,
+Nurse Handy.</description>
+  <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+  
+     <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>Screen</defName>
+    <label>screen</label>
+    <description>A regular screen that attaches to;
+Securitron.</description>
+  <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+  
+      <!--ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>Mk1Screen</defName>
+    <label>Mk1 screen</label>
+    <description>A default Mk1 screen.</description>
+  <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef-->
+  
+   <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>SensorPackage</defName>
+    <label>sensor package</label>
+    <description>A mechanical microphone capable of listening that attaches to;
+Assaultron,
+Gutsy,
+Handy,
+Nurse Handy,
+Protectetron,
+Scrapbot,
+Sentrybot.</description>
+  <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+  
+   <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>EyeStalk</defName>
+    <label>eye stalk</label>
+    <description>A robotic stalk for holding an eye that attaches to;
+Gutsy,
+Handy,
+Nurse Handy.</description>
+  <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+ 
+   <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>SegmentedArm</defName>
+    <label>segmented robot arm</label>
+    <description>A robotic arm that attaches to;
+Assaultron,
+Gutsy,
+Handy,
+Nurse Handy,
+Protectetron,
+Scrapbot,
+Securitron,
+Sentrybot.</description>
+  <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+
+       <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>ArmMount</defName>
+    <label>arm mount</label>
+    <description>A robotic shoulder that attaches to;
+Assaultron,
+Gutsy,
+Handy,
+Nurse Handy,
+Protectetron,
+Scrapbot,
+Securitron,
+Sentrybot.</description>
+  <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+  
+       <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>MechanicalEye</defName>
+    <label>mechanical eye</label>
+    <description>A robotic eye sensor that attaches to;
+Assaultron
+Gutsy,
+Handy,
+Nurse Handy,
+Protectetron,
+Scrapbot,
+Securitron,
+Sentrybot.</description>
+  <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+
+ <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>WeaponMount</defName>
+    <label>weapon mount</label>
+    <description>A replacement weapon mount capable of holding powerful weapons. Attaches to;
+Gutsy,
+Handy,
+Protectetron,
+Securitron,
+Sentrybot.</description>
+  <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+  
+             <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>Clamp</defName>
+    <label>clamp</label>
+    <description>A simple clamp. For all clamping needs. Seriously why are you even trying to learn about clamps? Stop reading and like worry about your starving colonists. Attaches to;
+	Assaultron,
+	Scrapbot</description>
+  <costList>
+      <Steel>20</Steel>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+  
+             <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>Pincer</defName>
+    <label>pincer</label>
+    <description>A replacement mechanical claw capable of holding things for;
+Handy,
+Gutsy,
+Nurse Handy.</description>
+  <costList>
+      <Steel>20</Steel>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+  
+             <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>Speaker</defName>
+    <label>speaker</label>
+    <description>A replacement speaker for;
+Securitron.</description>
+  <costList>
+      <Steel>20</Steel>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+  
+               <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>RobotWheel</defName>
+    <label>wheel</label>
+    <description>A replacement wheel for;
+Securitron.</description>
+  <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+  
+  
+                 <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>WheelStrut</defName>
+    <label>wheel strut</label>
+    <description>A replacement wheel strut for;
+Securitron.</description>
+  <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+  
+   <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>SegmentedLeg</defName>
+    <label>segmented robot leg</label>
+    <description>A robotic leg for;
+Assaultron
+Protectetron
+Scrapbot
+Sentrybot</description>
+  <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+
+       <ThingDef ParentName="BodyPartProstheticMakeableBase">
+    <defName>LegMount</defName>
+    <label>leg mount</label>
+    <description>A robotic leg mount for;
+Assaultron
+Protectetron
+Scrapbot
+Sentrybot.</description>
+  <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+  
+</Defs>

@@ -1,0 +1,58 @@
+﻿<?Yml version="1.0" encoding="utf8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>FCP_FalloutMeds</defName>
+    <label>Meds production</label>	
+	<tab>FCPFalloutChems</tab>
+    <description>Craft Meds.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>MedicineProduction</li>
+      <li>FCP_FalloutChemsJet</li>
+    </prerequisites>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+  </ResearchProjectDef>
+
+    <ResearchProjectDef>
+    <defName>FCP_FalloutChemsJet</defName>
+    <label>Jet production</label>
+	<tab>FCPFalloutChems</tab>
+    <description>Craft Jet.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites> 
+	  <li>DrugProduction</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+  </ResearchProjectDef>
+  
+
+  <ResearchProjectDef>
+    <defName>FCP_ChemsHard</defName>
+    <label>Advanced Chems Production</label>	
+	<tab>FCPFalloutChems</tab>
+    <description>Craft single tubed grenade launchers such as the grenade launcher and the grenade rifle.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>FCP_FalloutChemsJet</li>
+    </prerequisites>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+  </ResearchProjectDef>
+
+    <ResearchProjectDef>
+    <defName>FCP_Tobacco</defName>
+    <label>Tobacco farming</label>	
+	<tab>FCPFalloutChems</tab>
+    <description>Plant coyote tobacco and turn it into cigarettes.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+</Defs>

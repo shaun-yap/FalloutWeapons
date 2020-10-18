@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ScenPartDef[defName="PlayerPawnsArriveMethod"]/scenPartClass</xpath>
+    <value><scenPartClass>FalloutCore.ScenPart_PlayerPawnsArriveMethodInVertibids</scenPartClass></value>
+  </Operation>
+</Patch>

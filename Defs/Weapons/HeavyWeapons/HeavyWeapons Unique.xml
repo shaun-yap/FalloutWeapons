@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseGun">
+    <defName>FCP_HeavyWeapon_Avenger</defName>
+    <label>CZ57 Avenger</label>
+    <description>Rockwell designed the 5mm CZ57 Avenger as the replacement for their aging CZ53 personal minigun. The Avenger's design improvements include improved gel-fin cooling and chromium plated barrel-bores, giving it a greater range and lethality. It also has an ammo capacity of 120x 5mm round like the earlier versions of the CZ53 model.</description>
+    <graphicData>
+      <texPath>Things/HeavyWeapons/CZ57Avenger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>	
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<thingSetMakerTags>
+		<li>RewardSpecial</li>
+	</thingSetMakerTags>
+    <soundInteract>InteractMinigun</soundInteract>
+    <statBases>
+      <Mass>8</Mass>	
+	  <MarketValue>1850</MarketValue>
+      <AccuracyTouch>0.20</AccuracyTouch>
+      <AccuracyShort>0.30</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.23</AccuracyLong>
+      <RangedWeapon_Cooldown>2.01</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>GunHeavy</li>
+    </weaponTags>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_HeavyWeaponAvenger</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>44</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrels</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_HeavyWeaponAvenger</defName>
+    <label>5mm bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+    
+</Defs>

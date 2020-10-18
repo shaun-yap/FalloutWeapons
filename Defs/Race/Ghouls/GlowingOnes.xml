@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="GhoulRace">
+		<defName>GlowingGhoul</defName>
+		<label>glowing one</label>
+		<description>A non feral glowing ghoul, is a decrepit, rotting, zombie-like mutant. Intense and prolonged radiation has ravaged their skin, much of their flesh and in some cases many of their ligaments. It emits a powerful glow capable of growing plants.</description>
+		<comps>
+			<li Class="GlowingGhoul.CompProperties_GlowingGhoul">
+				<overlightRadius>7.0</overlightRadius>
+				<glowRadius>5</glowRadius>
+				<glowColor>(0,220,0,0)</glowColor>
+			</li>
+		</comps>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

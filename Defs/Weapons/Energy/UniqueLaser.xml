@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  	<!-- Laser Rifle -->
+  <ThingDef ParentName="BaseGun" Class="FalloutCollaborationProject.LaserGunDef">
+     <defName>FCP_EnergyLaser_AER14Protoytpe</defName>
+    <label>AER14 Prototype</label>
+    <description>The AER9 was actually not the top laser rifle in service at the time of the Great War. The model line went up to the state-of-the-art AER12, which saw service in a handful of specialty units. The reason that the AER9 is much more commonly found is that it was much sturdier and more reliable than the models that followed.</description>
+    <graphicData>
+      <texPath>Things/EnergyRifles/AER14Protoytpe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>	
+	<thingSetMakerTags>
+		<li>RewardSpecial</li>
+	</thingSetMakerTags>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>LaserRifleInteract</soundInteract>
+    <statBases>
+      <Mass>3.6</Mass>  
+	  <MarketValue>810</MarketValue>
+     <AccuracyTouch>0.645</AccuracyTouch>
+      <AccuracyShort>0.795</AccuracyShort>
+      <AccuracyMedium>0.895</AccuracyMedium>
+      <AccuracyLong>0.795</AccuracyLong>
+      <RangedWeapon_Cooldown>0.92</RangedWeapon_Cooldown>
+    </statBases>
+	<weaponTags>
+      <li>Unique</li>
+      <li>AER14Protoytpe</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>FCP_Bullet_AER14Protoytpe</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>36.9</range>		
+        <soundCast>ShotLaserRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<modExtensions>
+			<li Class="FCPEnergyFilth.DeathEffectModExtension">
+				<effectChance>0.30</effectChance>
+			</li>
+		</modExtensions>
+	<barrelLength>0.92</barrelLength>
+  </ThingDef>
+  
+   <ThingDef ParentName="FCP_Bullet_Laser" Class="FalloutCollaborationProject.LaserBeamDef">
+    <defName>FCP_Bullet_AER14Protoytpe</defName>
+    <label>laser burn</label> 
+	
+	
+	 <!--Actual Laser Texture-->
+	<textures>
+      <li>Effects/GreenLaserSkinny</li>
+    </textures>   
+	
+	<graphicData>
+      <drawSize>0.5</drawSize>
+    </graphicData>
+	
+    <projectile>
+      <damageDef>laserburn</damageDef>
+      <damageAmountBase>17</damageAmountBase>
+    </projectile>
+	
+	    <seam>0.25</seam>
+
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="BaseGun">
+    <defName>FCP_Pistol_AlienBlaster</defName>
+    <label>Alien Blaster</label>
+    <description>This weapon will often be able to take down any foe with a single shot to the head. Enemies killed by a critical hit from this weapon are disintegrated into ash, identical to a laser with the exception that the disintegration effect is colored blue instead of red.</description>
+    <graphicData>
+      <texPath>Things/EnergyPistols/AlienBlaster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>0.9</uiIconScale>
+    <soundInteract>AlienBlasterInteract</soundInteract>
+    <statBases>
+	  <MarketValue>355</MarketValue>
+      <Mass>0.7</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.882</AccuracyShort>
+      <AccuracyMedium>0.582</AccuracyMedium>
+      <AccuracyLong>0.482</AccuracyLong>
+      <RangedWeapon_Cooldown>1.52</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>UniqueLike</li>
+      <li>AlienBlaster</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>FCP_AlienBlaster</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>ShotAlienBlaster</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>	
+	<modExtensions>
+			<li Class="FCPEnergyFilth.DeathEffectModExtension">
+				<effectChance>0.30</effectChance>
+			</li>
+		</modExtensions>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>FCP_AlienBlaster</defName>
+    <label>laser blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>laserburn</damageDef>
+      <damageAmountBase>37</damageAmountBase>
+      <stoppingPower>0</stoppingPower>
+      <speed>65</speed>   
+    </projectile>
+  </ThingDef>
+	
+  
+  		<!-- Pew Pew Laser Pistol-->
+  <ThingDef ParentName="FCP_Bullet_Laser" Class="FalloutCollaborationProject.LaserBeamDef">
+    <defName>FCP_Bullet_PewPewPistol</defName>
+    <label>laser burn</label> 
+	
+	
+	 <!--Actual Laser Texture-->
+	<textures>
+      <li>Effects/LaserSkinny</li>
+    </textures>   
+	
+	<graphicData>
+      <drawSize>0.5</drawSize>
+    </graphicData>
+	
+    <projectile>
+      <damageDef>laserburn</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+    </projectile>
+	
+	    <seam>0.25</seam>
+
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGun" Class="FalloutCollaborationProject.LaserGunDef">
+    <defName>FCP_EnergyLaser_PewPewPistol</defName>
+    <label>Laser Pistol</label>
+    <description>The upper casing of Pew Pew is colored red, and the focus adjustment knob on the rear of the gun has a Sunset Sarsaparilla bottle cap with a crudely drawn star attached by a screw. Underneath the bottle cap are the words "Had it coming" etched into the casing, along with eight hash marks. Additional hash marks also appear along both sides and the underside of the main body of the pistol.</description>
+    <graphicData>
+      <texPath>Things/EnergyPistols/PewPew</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.8</uiIconScale>
+    <soundInteract>LaserPistolInteract</soundInteract>
+    <statBases>
+	  <MarketValue>299</MarketValue>
+      <Mass>1.4</Mass>    
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.855</AccuracyShort>
+      <AccuracyMedium>0.565</AccuracyMedium>
+      <AccuracyLong>0.465</AccuracyLong>
+      <RangedWeapon_Cooldown>2.25</RangedWeapon_Cooldown>
+    </statBases>
+	<weaponTags>
+      <li>PewPew</li>
+      <li>Unique</li>
+    </weaponTags>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>FCP_Bullet_PewPewPistol</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>ShotLaserPistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>	
+	<modExtensions>
+			<li Class="FCPEnergyFilth.DeathEffectModExtension">
+				<effectChance>0.30</effectChance>
+			</li>
+		</modExtensions>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<barrelLength>0.65</barrelLength>
+  </ThingDef>
+
+  
+  
+
+</Defs>

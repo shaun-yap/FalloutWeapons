@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <ThingDef ParentName="ApparelMakeableBase">
+		<defName>FCPApparel_VaultSuit</defName>
+		<label>vault suit</label>
+		<description>Vault jumpsuits are the regulation clothing carried by the vault dwellers of Vault-Tec vaults. They are made of Synthred, blue with a yellow zipper and the number of the vault is on the back of the suit.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Vault/VaultSuit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>0.05</generateCommonality>
+
+		<costList>
+			<Hyperweave>75</Hyperweave>
+		</costList>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>2200</WorkToMake>
+			<Mass>0.3</Mass>
+			<Flammability>0</Flammability>
+            <StuffEffectMultiplierArmor>0.32</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<TradePriceImprovement>0.03</TradePriceImprovement>
+			<SocialImpact>0.05</SocialImpact>
+			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+			<MoveSpeed>0.05</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+                <li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Vault/VaultSuit</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Vault</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Vaultdweller</li>
+            </defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+    </ThingDef>
+	
+	   <ThingDef ParentName="ApparelMakeableBase">
+		<defName>FCPApparel_ArmoredVaultSuit</defName>
+		<label>armored vault suit</label>
+		<description>This one is armored with leather and steel.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Vault/ArmoredVaultSuit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>0.05</generateCommonality>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costList>
+			<Hyperweave>75</Hyperweave>
+		</costList>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>2200</WorkToMake>
+			<Mass>0.45</Mass>
+			<Flammability>0</Flammability>
+            <StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<TradePriceImprovement>0.03</TradePriceImprovement>
+			<SocialImpact>0.05</SocialImpact>
+			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+			<MoveSpeed>0.05</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+                <li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Vault/ArmoredVaultSuit</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Vault</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>VaultTrader</li>
+            </defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+    </ThingDef>
+
+ <ThingDef ParentName="ApparelMakeableBase">
+		<defName>FCPApparel_VaultLabCoat</defName>
+		<label>vault lab coat</label>
+		<description>A light coat worn to protect scientist in the vault.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Vault/VaultLabCoat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>0.05</generateCommonality>
+		<costList>
+			<Cloth>80</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>0.8</Mass>
+			<ArmorRating_Sharp>0.12</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+			<Insulation_Cold>12</Insulation_Cold>
+ 			<Insulation_Heat>6</Insulation_Heat>
+            <EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ResearchSpeed>0.10</ResearchSpeed>
+			<DrugCookingSpeed>0.10</DrugCookingSpeed>
+			<DrugSynthesisSpeed>0.10</DrugSynthesisSpeed>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Vault/VaultLabCoat</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Vault</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Vault</li>
+            </defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+    </ThingDef>
+	
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>FCPApparel_VaultSecurityArmor</defName>
+		<label>vault security armor</label>
+		<description>A protective outfit worn over the torso to protect security personnel.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Vault/VaultSecurityArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+    <costList>
+      <Cloth>30</Cloth>
+      <Steel>55</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+      <MaxHitPoints>240</MaxHitPoints>
+      <Mass>3.0</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.37</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.27</ArmorRating_Heat>
+      <Insulation_Cold>1</Insulation_Cold>
+      <EquipDelay>4.5</EquipDelay>
+		</statBases>
+	<equippedStatOffsets>
+      <MoveSpeed>-0.08</MoveSpeed>
+    </equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Vault/VaultSecurityArmor</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Vault</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>VaultSecurity</li>
+            </defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+    </ThingDef>
+	
+	
+	<ThingDef ParentName="ApparelMakeableBase">
+	<defName>FCPApparel_VaultDwellerCoat</defName>
+	<label>Vault Dweller Coat</label>
+	<description>The leather coat consists of a long, ankle length coat, presumably made from leather,It has a belt with pouches.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Vault/VaultDwellerCoat</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.05</generateCommonality>
+	<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+	<thingCategories>
+		<li>Apparel</li>
+	</thingCategories>
+	<statBases>
+		<Flammability>0.2</Flammability>
+		<Mass>1</Mass>
+		<MarketValue>100</MarketValue>
+		<WorkToMake>1500</WorkToMake>
+		<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.3</ArmorRating_Heat>
+		<Insulation_Cold>25</Insulation_Cold>
+		<Insulation_Heat>10</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+		<TradePriceImprovement>0.1</TradePriceImprovement>
+	</equippedStatOffsets>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Vault/VaultDwellerCoat</wornGraphicPath>
+		<layers>
+			<li>Shell</li>
+		</layers>
+		<tags>
+			<li>Vault</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>VaultTrader</li>
+		</defaultOutfitTags>
+	</apparel>
+</ThingDef>
+	
+
+<ThingDef ParentName="HatMakeableBase">
+		<defName>FCPHeadgear_SecurityHelmet</defName>
+		<label>Security Helmet</label>
+		<description>A helmet ment to protect the Vault-Tec security personnels head.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Vault/SecurityHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+        <generateCommonality>0.15</generateCommonality>
+		<costList>
+			<Steel>45</Steel>
+		</costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>3500</WorkToMake>
+			<Mass>2</Mass>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>0</Insulation_Cold>
+ 			<Insulation_Heat>4</Insulation_Heat>
+            <EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.10</ConstructionSpeed>
+			<ConstructSuccessChance>0.05</ConstructSuccessChance>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>Headgear</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Vault/SecurityHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Vault</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>VaultSecurity</li>
+            </defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+    </ThingDef>
+
+</Defs>

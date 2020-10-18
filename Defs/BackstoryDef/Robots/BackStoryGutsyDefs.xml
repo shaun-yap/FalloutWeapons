@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.BackstoryDef>
+    <defName>GutsyDefaultChild</defName>
+    <title>Mister Gutsy Unit</title>
+	<titleShort>Mister Gutsy</titleShort>
+    <baseDescription>[PAWN_nameDef] was created to serve as a robo-soldier.</baseDescription>
+	<slot>Childhood</slot>
+    <skillGains>
+	  <li>
+        <defName>Shooting</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>-20</amount>
+      </li>
+       </skillGains>
+
+	<spawnCategories>
+	  <li>GutsyCat</li>
+    </spawnCategories>
+			
+	<workDisables>
+		<li>ManualDumb</li>
+		<li>Mining</li>		
+		<li>Crafting</li>
+		<li>Artistic</li>
+		<li>Animals</li>
+		<li>ManualSkilled</li>
+		<li>PlantWork</li>
+		<li>Crafting</li>
+		<li>Hauling</li>
+		<li>Intellectual</li>
+		<li>Animals</li>
+    </workDisables>
+		<forcedHediffs>
+		<li>RobotPain</li>
+		<li>RobotRest</li>
+		<li>FCPRobotMountedPlasmaRifle</li>
+		</forcedHediffs>
+
+
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>GutsyDefaultAdult</defName>
+    <title>Mister Gutsy</title>
+	<titleShort>Mister Gutsy</titleShort>
+    <baseDescription>[PAWN_nameDef] was created to serve as a robo-soldier.</baseDescription>
+	<slot>Adulthood</slot>
+	    <bodyTypeGlobal>Male</bodyTypeGlobal>
+
+
+	<spawnCategories>
+	  <li>GutsyCat</li>
+    </spawnCategories>
+			
+	<workDisables>
+		<li>Hauling</li>
+		<li>Mining</li>
+    </workDisables>
+	
+
+
+	  
+	  
+
+</AlienRace.BackstoryDef>
+</Defs>

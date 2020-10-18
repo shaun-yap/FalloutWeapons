@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+			<!-- Maria-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MariaPistol</defName>
+    <label>9mm bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseGun">
+    <defName>FCP_Pistol_Maria</defName>
+    <label>Maria</label>
+    <description>A custom model of an M and A 9mm pistol made by M and A Guns Manufacturers, this weapon has an image of Our Lady of Guadalupe, a well known Catholic figure and a representation of the biblical Woman of the Apocalypse, painted on the pearl grips of the firearm.</description>
+    <graphicData>
+      <texPath>Things/Pistols/Maria</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingSetMakerTags>
+		<li>RewardSpecial</li>
+	</thingSetMakerTags>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact9mm</soundInteract>
+    <statBases>
+      <MarketValue>250</MarketValue>
+      <Mass>0.7</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>0.73</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Unique</li>
+	  <li>Maria</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_MariaPistol</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>Shot9mm</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+			<!-- LilDevil-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_LilDevilPistol</defName>
+    <label>12.7mm bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseGun">
+    <defName>FCP_Pistol_LilDevil</defName>
+    <label>Li'l Devil</label>
+    <description>Li'l Devil is a unique variant of the 12.7mm pistol. It does greater damage and fires faster.</description>
+    <graphicData>
+      <texPath>Things/Pistols/LilDevil</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingSetMakerTags>
+		<li>RewardSpecial</li>
+	</thingSetMakerTags>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>1.5</Mass>
+      <AccuracyTouch>0.782</AccuracyTouch>
+      <AccuracyShort>0.732</AccuracyShort>
+      <AccuracyMedium>0.432</AccuracyMedium>
+      <AccuracyLong>0.332</AccuracyLong>
+      <RangedWeapon_Cooldown>0.84</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Unique</li>
+	  <li>LilDevil</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_LilDevilPistol</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+			<!-- ThatGun-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ThatGunPistol</defName>
+    <label>5.56mm bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseGun">
+    <defName>FCP_Pistol_ThatGun</defName>
+    <label>That Gun</label>
+    <description>That Gun is a heavily modified 5.56mm pistol. It weighs a hefty 5 pounds and has a motorized cylinder and crane for quicker shooting and reloading than a typical revolver.</description>
+    <graphicData>
+      <texPath>Things/Pistols/ThatGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingSetMakerTags>
+		<li>RewardSpecial</li>
+	</thingSetMakerTags>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>ThatGunInteract</soundInteract>
+    <statBases>
+      <MarketValue>300</MarketValue>
+      <Mass>2.3</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>0.91</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Unique</li>
+	  <li>ThatGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_LilDevilPistol</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>ShotThatGun</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>

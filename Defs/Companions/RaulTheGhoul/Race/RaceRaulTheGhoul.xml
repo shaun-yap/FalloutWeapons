@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace Name="RaulGhoulRace" ParentName="HumanRace">
+    <defName>FCP_Raul_The_Ghoul</defName>
+    <label>ghoul</label>
+    <description>A non feral ghoul, is a decrepit, rotting, zombie-like mutant. Intense and prolonged radiation has ravaged their skin, much of their flesh and in some cases many of their ligaments.</description>
+	<alienRace>
+	  <generalSettings>
+		<maleGenderProbability>1</maleGenderProbability>
+        <humanRecipeImport>true</humanRecipeImport>
+	    <allowHumanBios>false</allowHumanBios>
+		<immuneToAge>true</immuneToAge>
+
+            <forcedRaceTraitEntries>
+                    <li>
+                        <defName>ShootingAccuracy</defName>
+						<degree>1</degree>
+                                             </li>
+					
+					 <li>
+                        <defName>NaturalMood</defName>
+						<degree>1</degree>
+                                             </li>
+				    <li>
+                        <defName>GreatMemory</defName>
+                                             </li>
+            </forcedRaceTraitEntries>
+				<disallowedTraits>
+				    <li>
+                        <defName>AnnoyingVoice</defName>
+                      </li>
+					 <li>
+                        <defName>SuperImmune</defName>
+                    </li>
+				    <li>
+                        <defName>CreepyBreathing</defName>
+                    </li>
+				</disallowedTraits>
+				
+	<alienPartGenerator>
+			<aliencrowntypes>
+                <li>Average_Normal</li>
+                </aliencrowntypes>
+          <alienbodytypes>
+            <li>Male</li>
+          </alienbodytypes>
+				<useGenderedHeads>true</useGenderedHeads>
+        <customDrawSize>(1, 1)</customDrawSize>
+        <customHeadDrawSize>(1, 1)</customHeadDrawSize>
+        <customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
+        <customPortraitHeadDrawSize>(1, 1)</customPortraitHeadDrawSize>
+
+
+
+
+        <headOffset>(0, 0)</headOffset>
+
+	<colorChannels>
+    <li>
+        <name>skin</name>
+        <first Class="ColorGenerator_Options">
+				<options>
+								 <!--LightGreen-->
+
+                    <li>
+                        <weight>5</weight>
+                        <only>RGBA(0.9,1,0.7,1)</only>
+                    </li> 
+				
+				 <!--DarkGreen>
+                    <li>
+                        <weight>5</weight>
+                        <only>RGBA(0.6,0.7,0.3,1)</only>
+                    </li-->
+	
+				 <!--Tan-->
+                    <li>
+                        <weight>5</weight>
+                        <only>RGBA(1,0.9,0.8,1)</only>
+                    </li>
+				    <li>
+                        <weight>5</weight>
+                        <only>RGBA(1,0.9,0.7,1)</only>
+                    </li>
+				 <!--Brown-->
+
+					                    <li>
+                        <weight>5</weight>
+                        <only>RGBA(0.7,0.6,0.5,1)</only>
+                    </li>	
+					<li>
+                        <weight>5</weight>
+                        <only>RGBA(0.7,0.6,0.4,1)</only>
+                    </li>
+
+                </options>
+        </first>
+        <second Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>RGBA(0.500, 1.000, 0.000, 1.000)</only>
+                </li>
+            </options>
+        </second>
+    </li>
+</colorChannels>	
+
+			</alienPartGenerator>
+		<canLayDown>true</canLayDown>		
+	  </generalSettings>
+	  
+
+	  
+	  
+	  
+		<graphicPaths>
+			<li>
+				<body>Ghoul/Body/</body>
+				<head>Ghoul/Head/</head>
+			</li>
+		</graphicPaths>
+        <hairSettings>
+            <hasHair>false</hasHair>
+        </hairSettings>
+		
+	<raceRestriction>
+				<apparelList>	
+				<li>FCPApparel_VaqueroOutfit</li>
+				</apparelList>
+				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+				<onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
+	</raceRestriction>
+	
+		<relationSettings>
+            <relationChanceModifierLover>0</relationChanceModifierLover>
+            <relationChanceModifierExLover>0</relationChanceModifierExLover>
+            <relationChanceModifierFiance>0</relationChanceModifierFiance>
+            <relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+            <relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+            <relationChanceModifierParent>0</relationChanceModifierParent>
+            <relationChanceModifierChild>0</relationChanceModifierChild>
+            <relationChanceModifierSibling>0</relationChanceModifierSibling>
+        </relationSettings>
+		
+			<thoughtSettings>
+			<cannotReceiveThoughtsAtAll>false</cannotReceiveThoughtsAtAll>
+
+			<replacerList>
+			
+      
+				<li>
+                    <original>AteWithoutTable</original>
+                    <replacer>FCP_Raul_The_Ghoul_AteWithoutTable</replacer> 
+                </li>    	    
+				<li>
+                    <original>SleepDisturbed</original>
+                    <replacer>FCP_Raul_The_Ghoul_SleepDisturbed</replacer> 
+                </li>       
+				<li>
+                    <original>NewColonyOptimism</original>
+                    <replacer>FCP_Raul_The_Ghoul_NewColonyOptimism</replacer> 
+                </li>             
+				<li>
+                    <original>NewColonyHope</original>
+                    <replacer>FCP_Raul_The_Ghoul_NewColonyHope</replacer> 
+                </li>		
+				<li>
+                    <original>SleptOutside</original>
+                    <replacer>FCP_Raul_The_Ghoul_SleptOutside</replacer> 
+                </li>       
+				<li>
+                    <original>SleptOnGround</original>
+                    <replacer>FCP_Raul_The_Ghoul_SleptOnGround</replacer> 
+                </li>       
+				<li>
+                    <original>SleptInCold</original>
+                    <replacer>FCP_Raul_The_Ghoul_SleptInCold</replacer> 
+                </li>
+				<li>
+                    <original>SleptInHeat</original>
+                    <replacer>FCP_Raul_The_Ghoul_SleptInHeat</replacer> 
+                </li>                       <li>
+                    <original>KnowPrisonerSold</original>
+                    <replacer>FCP_Raul_The_Ghoul_KnowPrisonerSold</replacer> 
+                </li>         
+
+       
+				<li>
+                    <original>FreedFromSlavery</original>
+                    <replacer>FCP_Raul_The_Ghoul_FreedFromSlavery</replacer> 
+                </li>		
+				<li>
+                    <original>ReleasedHealthyPrisoner</original>
+                    <replacer>FCP_Raul_The_Ghoul_ReleasedHealthyPrisoner</replacer> 
+                </li>       
+				<li>
+                    <original>KnowGuestOrganHarvested</original>
+                    <replacer>FCP_Raul_The_Ghoul_KnowGuestOrganHarvested</replacer> 
+                </li>       
+				<li>
+                    <original>KnowColonistOrganHarvested</original>
+                    <replacer>FCP_Raul_The_Ghoul_KnowColonistOrganHarvested</replacer> 
+                </li>
+								<li>
+                    <original>WasImprisoned</original>
+                    <replacer>FCP_Raul_The_Ghoul_WasImprisoned</replacer> 
+                </li>  				
+												<li>
+                    <original>Catharsis</original>
+                    <replacer>FCP_Raul_The_Ghoul_Catharsis</replacer> 
+                </li>  
+												<li>
+                    <original>Nuzzled</original>
+                    <replacer>FCP_Raul_The_Ghoul_Nuzzled</replacer> 
+                </li>  
+												<li>
+                    <original>KnowBuriedInSarcophagus</original>
+                    <replacer>FCP_Raul_The_Ghoul_KnowBuriedInSarcophagus</replacer> 
+                </li>  
+												<li>
+                    <original>SoakingWet</original>
+                    <replacer>FCP_Raul_The_Ghoul_SoakingWet</replacer> 
+                </li>  				
+												<li>
+                    <original>ButcheredHumanlikeCorpse</original>
+                    <replacer>FCP_Raul_The_Ghoul_ButcheredHumanlikeCorpse</replacer> 
+                </li>  								
+												<li>
+                    <original>KnowButcheredHumanlikeCorpse</original>
+                    <replacer>FCP_Raul_The_Ghoul_KnowButcheredHumanlikeCorpse</replacer> 
+                </li>  
+												<li>
+                    <original>ObservedLayingCorpse</original>
+                    <replacer>FCP_Raul_The_Ghoul_ObservedLayingCorpse</replacer> 
+                </li>  
+												<li>
+                    <original>ObservedLayingRottingCorpse</original>
+                    <replacer>FCP_Raul_The_Ghoul_ObservedLayingRottingCorpse</replacer> 
+                </li>  
+												<li>
+                    <original>WitnessedDeathNonAlly</original>
+                    <replacer>FCP_Raul_The_Ghoul_WitnessedDeathNonAlly</replacer> 
+                </li>  												<li>
+                    <original>WitnessedDeathAlly</original>
+                    <replacer>FCP_Raul_The_Ghoul_WitnessedDeathAlly</replacer> 
+                </li>  
+ 
+																<li>
+                    <original>DefeatedHostileFactionLeader</original>
+                    <replacer>FCP_Raul_The_Ghoul_DefeatedHostileFactionLeader</replacer> 
+                </li>  
+																<li>
+                    <original>ColonistBanished</original>
+                    <replacer>FCP_Raul_The_Ghoul_ColonistBanished</replacer> 
+                </li>  
+																<li>
+                    <original>ColonistBanishedToDie</original>
+                    <replacer>FCP_Raul_The_Ghoul_ColonistBanishedToDie</replacer> 
+                </li>  
+																<li>
+                    <original>PrisonerBanishedToDie</original>
+                    <replacer>FCP_Raul_The_Ghoul_PrisonerBanishedToDie</replacer> 
+                </li>  
+																<li>
+                    <original>BondedAnimalBanished</original>
+                    <replacer>FCP_Raul_The_Ghoul_BondedAnimalBanished</replacer> 
+                </li>  
+																<li>
+                    <original>FailedToRescueRelative</original>
+                    <replacer>FCP_Raul_The_Ghoul_FailedToRescueRelative</replacer> 
+                </li>  				
+																<li>
+                    <original>RescuedRelative</original>
+                    <replacer>FCP_Raul_The_Ghoul_RescuedRelative</replacer> 
+                </li>  
+													<li>
+                    <original>Rescued</original>
+                    <replacer>FCP_Raul_The_Ghoul_Rescued</replacer> 
+                </li>  		
+            </replacerList>
+				
+			</thoughtSettings>
+	</alienRace>
+    <statBases>
+		<ToxicSensitivity>0</ToxicSensitivity>
+		<PawnBeauty>-2</PawnBeauty>
+		<MarketValue>1000</MarketValue>
+		<MoveSpeed>4.2</MoveSpeed>
+		<Flammability>2</Flammability>
+		<ImmunityGainSpeed>2</ImmunityGainSpeed>
+		<CarryingCapacity>65</CarryingCapacity>
+		<ArmorRating_Sharp>0</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0</ArmorRating_Blunt>
+		<ArmorRating_Heat>0</ArmorRating_Heat>
+		<ComfyTemperatureMin>24</ComfyTemperatureMin>
+		<ComfyTemperatureMax>25</ComfyTemperatureMax>
+		<PainShockThreshold>1</PainShockThreshold>
+		<HungerRateMultiplier>0.67</HungerRateMultiplier>
+		<Mass>50</Mass>
+		<EatingSpeed>1</EatingSpeed>
+		<WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+		<MeatAmount>25</MeatAmount>
+		<ResearchSpeed>1</ResearchSpeed>
+		<PlantWorkSpeed>1</PlantWorkSpeed>
+		<LeatherAmount>35</LeatherAmount>
+		<GlobalLearningFactor>1</GlobalLearningFactor>
+<!--social -->
+			  <NegotiationAbility>1</NegotiationAbility>
+			  <TradePriceImprovement>1</TradePriceImprovement>
+			  <SocialImpact>1</SocialImpact>
+			  
+<!--violence -->
+			  <HuntingStealth>1</HuntingStealth>
+
+
+<!--foragers -->
+			  <CookSpeed>1</CookSpeed>
+			  <ButcheryFleshSpeed>1</ButcheryFleshSpeed>
+			  <ButcheryFleshEfficiency>1</ButcheryFleshEfficiency>
+			  
+<!--primative -->
+			  <DrugCookingSpeed>1</DrugCookingSpeed>
+			  <!--TailoringSpeed>1</TailoringSpeed-->
+			  <SmeltingSpeed>1</SmeltingSpeed>
+			  <MedicalTendQuality>1</MedicalTendQuality>
+			  <MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance>
+
+
+<!--animal-like -->
+			  <PsychicSensitivity>1</PsychicSensitivity>
+			  <TrainAnimalChance>1</TrainAnimalChance>
+			  <TameAnimalChance>1</TameAnimalChance>
+			  <SmoothingSpeed>1</SmoothingSpeed>
+			  <AnimalGatherSpeed>1</AnimalGatherSpeed>			  
+              <MiningSpeed>1</MiningSpeed>
+			  <!--MeleeDodgeChance>0</MeleeDodgeChance-->
+
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>10.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.07</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	
+    <race>
+	  <nameGenerator>RaulTheGhoulNamer</nameGenerator>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>500</lifeExpectancy>
+      <leatherDef>Leather_Human</leatherDef>
+      <nameCategory>HumanStandard</nameCategory>
+      <body>Human</body>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>45</gestationPeriodDays>
+      <meatMarketValue>0.2</meatMarketValue>
+      <manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+          <li>(18,0)</li>
+          <li>(20,100)</li>
+          <li>(50,100)</li>
+          <li>(60,30)</li>
+          <li>(100,18)</li>
+          <li>(150,10)</li>
+          <li>(290,3)</li>
+          <li>(350,0)</li>
+        </points>
+      </ageGenerationCurve>
+		<hediffGiverSets>
+      </hediffGiverSets>
+	  
+    </race>
+    <recipes>
+      <li>ExciseCarcinoma</li>
+      <li>AdministerMechSerumHealer</li>
+      <li>RemoveBodyPart</li>
+      <li>Euthanize</li>
+      <li>Anesthetize</li>
+    </recipes>
+
+  </AlienRace.ThingDef_AlienRace>
+
+
+</Defs>

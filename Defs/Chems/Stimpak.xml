@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+	<HediffDef>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defName>FCPStimpakHeal</defName>
+		<description>A syringe containing high grade medicine and drugs that quickly heal injuries.</description>
+		<label>Stimpack </label>   
+		<maxSeverity>1.0</maxSeverity>
+    <stages>
+				<li><naturalHealingFactor>100</naturalHealingFactor></li>
+    </stages>
+		<comps>		
+			<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-2.5</severityPerDay>
+			</li>	
+			<!--2,500 ticks per hour in game-->
+		<li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2900~3500</disappearsAfterTicks>
+		</li>
+		</comps>
+	</HediffDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>FCPStimpak</defName>
+    <label>stimpak</label>
+    <description>A stimpak is a hand-held medication used in healing the body. When the medicine is injected, it provides quick healing of the body's minor wounds.</description>
+    <descriptionHyperlinks><HediffDef>FCPStimpakHeal</HediffDef></descriptionHyperlinks>
+    <graphicData>
+      <texPath>Chems/Stimpack</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>0.005</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FCPStimpakHeal</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>PenoxycylineProduction</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>4</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+
+</Defs>

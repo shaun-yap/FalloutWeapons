@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="ImmunityGainSpeed"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ImmunityGainSpeed"]</xpath>
+					<value>
+						<parts>
+							<li Class="Special.StatPart_Strength"> 
+								<weight>1</weight>
+							</li>
+						</parts>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ImmunityGainSpeed"]/parts</xpath>
+					<value>
+							<li Class="Special.StatPart_Strength"> 
+							<weight>0.5</weight>
+						</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="ImmunityGainSpeedFactor"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ImmunityGainSpeedFactor"]</xpath>
+					<value>
+						<parts>
+							<li Class="Special.StatPart_Endurance"> 
+								<weight>1.0</weight>
+							</li>
+						</parts>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ImmunityGainSpeedFactor"]/parts</xpath>
+					<value>
+						<li Class="Special.StatPart_Endurance"> 
+							<weight>1.0</weight>
+						</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation-->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="ToxicSensitivity"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ToxicSensitivity"]</xpath>
+					<value>
+						<parts>
+							<li Class="Special.StatPart_Endurance"> 
+								<weight>1</weight>
+							</li>
+						</parts>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ToxicSensitivity"]/parts</xpath>
+					<value>
+						<li Class="Special.StatPart_Endurance"> 
+							<weight>0.5</weight>
+						</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="ComfyTemperatureMin"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ComfyTemperatureMin"]</xpath>
+					<value>
+						<parts>
+							<li Class="Special.StatPart_Endurance"> 
+								<weight>1</weight>
+							</li>
+						</parts>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ComfyTemperatureMin"]/parts</xpath>
+					<value>
+						<li Class="Special.StatPart_Endurance"> 
+							<weight>0.5</weight>
+						</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[@Name="ComfyTemperatureMax"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[@Name="ComfyTemperatureMax"]</xpath>
+					<value>
+						<parts>
+							<li Class="Special.StatPart_Endurance"> 
+								<weight>1</weight>
+							</li>
+						</parts>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[@Name="ComfyTemperatureMax"]/parts</xpath>
+					<value>
+						<li Class="Special.StatPart_Endurance"> 
+							<weight>0.5</weight>
+						</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="Insulation_Cold"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="Insulation_Cold"]</xpath>
+					<value>
+						<parts>
+							<li Class="Special.StatPart_Endurance"> 
+								<weight>1.0</weight>
+							</li>
+						</parts>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="Insulation_Cold"]/parts</xpath>
+					<value>
+						<li Class="Special.StatPart_Endurance"> 
+							<weight>1.0</weight>
+						</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="Insulation_Heat"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="Insulation_Heat"]</xpath>
+					<value>
+						<parts>
+							<li Class="Special.StatPart_Endurance"> 
+								<weight>1.0</weight>
+							</li>
+						</parts>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="Insulation_Heat"]/parts</xpath>
+					<value>
+						<li Class="Special.StatPart_Endurance"> 
+							<weight>1.0</weight>
+						</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation-->
+
+</Patch>

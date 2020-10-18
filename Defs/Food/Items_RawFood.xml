@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<ThingDef ParentName="PlantFoodRawBase">
+			<defName>RawTatos</defName>
+			<label>Tatos</label>
+			<description>A mutated hybrid between potatoes and tomatoes. It tastes horrible raw, and not much better when cooked, but in the wasteland you can't complain.</description>
+			<graphicData>
+				<texPath>Things/Crops/Veg/Tato</texPath>
+			</graphicData>
+			<statBases>
+				<MarketValue>1.1</MarketValue>
+					<Mass>0.15</Mass>
+					<Nutrition>0.2</Nutrition>
+			</statBases>
+			<ingestible>
+				<foodType>VegetableOrFruit</foodType>
+			</ingestible>
+			<comps>
+				<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				</li>
+			</comps>
+</ThingDef>
+
+<ThingDef ParentName="PlantFoodRawBase">
+		<defName>RawMutfruit</defName>
+		<label>Mutfruit</label>
+		<description>A large mutated descendant of apples, it tastes good and won't kill you, a must have for farmers in the wastelands.</description>
+		<graphicData>
+			<texPath>Things/Crops/Fruit/Mutfruit</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.0</MarketValue>
+			<Mass>0.05</Mass>
+			<Nutrition>0.35</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<tasteThought/>
+			<foodType>VegetableOrFruit</foodType>
+			<joy>0.2</joy>
+			<joyKind>Gluttonous</joyKind>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>20</daysToRotStart>
+			</li>
+		</comps>
+</ThingDef>
+
+
+<ThingDef ParentName="PlantFoodRawBase">
+		<defName>RawBananaYucca</defName>
+		<label>Banana Yucca </label>
+		<description>The yellow, fist sized fruit of the banana yucca plant can be found growing wild throughout the Wasteland. Bighorners enjoy eating the fruit.</description>
+		<graphicData>
+			<texPath>Things/Crops/Fruit/BananaYucca</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.5</MarketValue>
+			<Mass>0.05</Mass>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<tasteThought/>
+			<foodType>VegetableOrFruit</foodType>
+			<joy>0.004</joy>
+			<joyKind>Gluttonous</joyKind>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>RawBarrelCactus</defName>
+		<label>Barrel Cactus </label>
+		<description>Raw barrel cactus fruit.</description>
+		<graphicData>
+			<texPath>Things/Crops/Fruit/BarrelCactus</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.1</MarketValue>
+			<Mass>0.05</Mass>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<ingestible>
+			<tasteThought/>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+			<defName>RawSiltBeans</defName>
+			<label>SiltBeans</label>
+			<description>Silt beans are red pods of legumes that grow in the wilderness, similar in appearance to a red flower at a distance. Silt beans appear to be some form of mutated green bean.</description>
+			<graphicData>
+				<texPath>Things/Crops/Veg/SiltBean</texPath>
+			</graphicData>
+			<statBases>
+				<MarketValue>1.2</MarketValue>
+					<Mass>0.15</Mass>
+					<Nutrition>0.2</Nutrition>
+			</statBases>
+			<ingestible>
+				<foodType>VegetableOrFruit</foodType>
+			</ingestible>
+			<comps>
+				<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				</li>
+			</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantFoodRawBase">
+			<defName>RawCarrots</defName>
+			<label>Carrot</label>
+			<description>A mutated carrot that became fatter and with longer, thicker off-shooting roots branching from the main taproot.</description>
+			<graphicData>
+				<texPath>Things/Crops/Veg/Carrot</texPath>
+			</graphicData>
+			<statBases>
+				<MarketValue>1.6</MarketValue>
+					<Mass>0.15</Mass>
+					<Nutrition>0.2</Nutrition>
+			</statBases>
+			<ingestible>
+				<foodType>VegetableOrFruit</foodType>
+			</ingestible>
+			<comps>
+				<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				</li>
+			</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+			<defName>RawGourds</defName>
+			<label>Gourd</label>
+			<description>Raw gourd.</description>
+			<graphicData>
+				<texPath>Things/Crops/Veg/Gourd</texPath>
+			</graphicData>
+			<statBases>
+				<MarketValue>1.8</MarketValue>
+					<Mass>0.15</Mass>
+					<Nutrition>0.35</Nutrition>
+			</statBases>
+			<ingestible>
+				<foodType>VegetableOrFruit</foodType>
+			</ingestible>
+			<comps>
+				<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				</li>
+			</comps>
+	</ThingDef>
+	
+		<ThingDef ParentName="PlantFoodRawBase">
+			<defName>RawMelon</defName>
+			<label>Gourd</label>
+			<description>Raw melon.</description>
+			<graphicData>
+				<texPath>Things/Crops/Fruit/Melon</texPath>
+			</graphicData>
+			<statBases>
+				<MarketValue>1.8</MarketValue>
+					<Mass>0.15</Mass>
+					<Nutrition>0.35</Nutrition>
+			</statBases>
+			<ingestible>
+				<preferability>RawTasty</preferability>
+				<foodType>VegetableOrFruit</foodType>
+				<joy>0.05</joy>
+				<joyKind>Gluttonous</joyKind>
+			</ingestible>
+			<comps>
+				<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				</li>
+			</comps>
+	</ThingDef>
+	
+	
+		<ThingDef ParentName="PlantFoodRawBase">
+			<defName>RawBlackberry</defName>
+			<label>Blackberry</label>
+			<description>Raw blackberries.</description>
+			<graphicData>
+				<texPath>Things/Crops/Fruit/Blackberry</texPath>
+			</graphicData>
+			<statBases>
+				<MarketValue>0.8</MarketValue>
+					<Mass>0.05</Mass>
+					<Nutrition>0.05</Nutrition>
+			</statBases>
+			<ingestible>
+				<preferability>RawTasty</preferability>
+				<foodType>VegetableOrFruit</foodType>
+				<joy>0.02</joy>
+				<joyKind>Gluttonous</joyKind>
+			</ingestible>
+			<comps>
+				<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				</li>
+			</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+			<defName>RawTarberryPurple</defName>
+			<label>Tarberry Purple</label>
+			<description>Raw purple tarberries.</description>
+			<graphicData>
+				<texPath>Things/Crops/Fruit/TarberryPurple</texPath>
+			</graphicData>
+			<statBases>
+				<MarketValue>0.8</MarketValue>
+					<Mass>0.05</Mass>
+					<Nutrition>0.05</Nutrition>
+			</statBases>
+			<ingestible>
+				<preferability>RawTasty</preferability>
+				<foodType>VegetableOrFruit</foodType>
+				<joy>0.02</joy>
+				<joyKind>Gluttonous</joyKind>
+			</ingestible>
+			<comps>
+				<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				</li>
+			</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+			<defName>RawTarberryOrange</defName>
+			<label>Tarberry Orange</label>
+			<description>Raw orange tarberries.</description>
+			<graphicData>
+				<texPath>Things/Crops/Fruit/TarberryOrange</texPath>
+			</graphicData>
+			<statBases>
+				<MarketValue>0.8</MarketValue>
+					<Mass>0.05</Mass>
+					<Nutrition>0.05</Nutrition>
+			</statBases>
+			<ingestible>
+				<preferability>RawTasty</preferability>
+				<foodType>VegetableOrFruit</foodType>
+				<joy>0.02</joy>
+				<joyKind>Gluttonous</joyKind>
+			</ingestible>
+			<comps>
+				<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				</li>
+			</comps>
+	</ThingDef>
+	
+	
+		<ThingDef ParentName="PlantFoodRawBase">
+			<defName>RawJalapeno</defName>
+			<label>Jalapeno</label>
+			<description>Raw jalapeno.</description>
+			<graphicData>
+				<texPath>Things/Crops/Veg/Jalapeno</texPath>
+			</graphicData>
+			<statBases>
+				<MarketValue>0.9</MarketValue>
+					<Mass>0.03</Mass>
+					<Nutrition>0.09</Nutrition>
+			</statBases>
+			<ingestible>
+				<foodType>VegetableOrFruit</foodType>
+			</ingestible>
+			<comps>
+				<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				</li>
+			</comps>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+			<defName>RawMaize</defName>
+			<label>Maize</label>
+			<description>Raw maize.</description>
+			<graphicData>
+				<texPath>Things/Crops/Veg/Maize</texPath>
+			</graphicData>
+			<statBases>
+				<MarketValue>1.1</MarketValue>
+					<Mass>0.15</Mass>
+					<Nutrition>0.15</Nutrition>
+			</statBases>
+			<ingestible>
+				<foodType>VegetableOrFruit</foodType>
+			</ingestible>
+			<comps>
+				<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				</li>
+			</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+			<defName>RawSnaptail</defName>
+			<label>Snaptail</label>
+			<description>Raw snaptail.</description>
+			<graphicData>
+				<texPath>Things/Crops/Flower/Snaptail</texPath>
+			</graphicData>
+			<statBases>
+				<MarketValue>1.1</MarketValue>
+					<Mass>0.15</Mass>
+					<Nutrition>0.02</Nutrition>
+			</statBases>
+			<ingestible>
+				<foodType>VegetableOrFruit</foodType>
+			</ingestible>
+			<comps>
+				<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				</li>
+			</comps>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="RoughPlantBase">
+			<defName>XanderRoot</defName>
+		<label>Xander Root</label>
+		<description>A large turnip-like root with mild healing properties. When combined with a Broc Flower it can create herbal medicine or stimpaks.</description>
+		<graphicData>
+			<texPath>Things/Crops/Veg/XanderRoot</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>3</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>120</daysToRotStart>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>BrocFlower</defName>
+		<label>Broc Flower</label>
+		<description>A small orange flower with slight medicinal properties. When combined with a Xander Root it can create herbal medicine or stimpaks.</description>
+		<graphicData>
+			<texPath>Things/Crops/Flower/BrocFlower</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>3</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>HubFlower</defName>
+		<label>Hub Flower</label>
+		<description>Ranunculacae serranus, commonly called hubflower or soot flower, is a mutated species of buttercups, used for making certain chems.</description>
+		<graphicData>
+			<texPath>Things/Crops/Flower/HubFlower</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>2</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+	</ThingDef>
+	
+		<ThingDef ParentName="RoughPlantBase">
+		<defName>Bloodleaf</defName>
+		<label>Bloodleaf</label>
+		<description>The Bloodleaf plant grows in water containing little radiation, like hydroponic basins and other shallow water sources.</description>
+		<graphicData>
+			<texPath>Things/Crops/Flower/Bloodleaf</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>2</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+	</ThingDef>
+	
+		<ThingDef ParentName="RoughPlantBase">
+		<defName>ThistleFlower</defName>
+		<label>Thistle</label>
+		<description>Thistle is a prickly plant that grows in the wasteland with iridescent colored leaves. It can be used in the creation of some consumables.</description>
+		<graphicData>
+			<texPath>Things/Crops/Flower/ThistleFlower</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>2</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+    <defName>RawGlowingfungus</defName>
+    <label>Raw Glowing fungus</label>
+    <description>Raw glowing fungus.</description>
+    <graphicData>
+      <texPath>Things/Crops/Fungui/GlowingFungus</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.2</MarketValue>
+	  <Nutrition>0.08</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>45</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  	<ThingDef ParentName="PlantFoodRawBase">
+    <defName>RawBrainFungus</defName>
+    <label>Raw Brain Fungus</label>
+    <description>Raw brain fungus.</description>
+    <graphicData>
+      <texPath>Things/Crops/Fungui/BrainFungus</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.2</MarketValue>
+	  <Nutrition>0.20</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>45</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+    <defName>RawFireCap</defName>
+    <label>Raw Fire Cap</label>
+    <description>Raw fire cap fungus.</description>
+    <graphicData>
+      <texPath>Things/Crops/Fungui/Firecap</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.6</MarketValue>
+	   <Nutrition>0.15</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>45</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+ <!-- Plant matter (inedible by people) -->
+	
+	<ThingDef ParentName="RoughPlantBase">
+		<defName>Razorgrain</defName>
+		<label>Razorgrain</label>
+		<description>It's a toothy grain that we may be able to grind in order to replace wheat, which is untenable in the Wasteland.</description>
+		<stackLimit>250</stackLimit>
+		<graphicData>
+		<texPath>Things/Crops/Fruit/Razorgrain</texPath>
+		</graphicData>
+		<statBases>
+		<MarketValue>0.6</MarketValue>
+		<Mass>0.014</Mass>
+		<Flammability>1.5</Flammability>
+		</statBases>
+		<comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>90</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+		</comps>
+		<thingCategories>
+		<li>Foods</li>
+		</thingCategories>
+		<ingestible>
+		<optimalityOffsetFeedingAnimals>7</optimalityOffsetFeedingAnimals>
+		</ingestible>
+    </ThingDef>
+	
+	
+	 <ThingDef ParentName="RoughPlantBase">
+    <defName>TobaccoLeaves</defName>
+    <label>smokeleaf leaves</label>
+    <description>Raw cut leaves of a coyote tobacco plant. Can be rolled into smokeable cigarrets or cigars at a crafting spot.</description>
+    <graphicData>
+      <texPath>Things/Crops/Flower/TobaccoLeaves</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.6</MarketValue>
+      <Flammability>1.3</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+    </ingestible>
+  </ThingDef>
+	
+	
+
+</Defs>

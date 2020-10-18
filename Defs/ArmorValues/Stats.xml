@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<StatDef>
+		<defName>FC_ArmorValues</defName>
+		<workerClass>FalloutCore.StatWorker_AdditionalArmorStats</workerClass>
+		<label>Additional armor values</label>
+		<description>Additional armor values.</description>
+		<category>Apparel</category>
+		<displayPriorityInCategory>10</displayPriorityInCategory>
+	</StatDef>
+
+</Defs>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <FactionDef ParentName="HumanFactionBase" Name="FCPLegionFactionBase" Abstract="True">
+        <pawnSingular>Legionary</pawnSingular>
+        <pawnsPlural>legionaries</pawnsPlural>
+        <listOrderPriority>122</listOrderPriority>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxCountAtGameStart>1</maxCountAtGameStart>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canSiege>false</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <autoFlee>false</autoFlee>
+        <!--permanentEnemy>false</permanentEnemy-->
+        <leaderTitle>Caesar</leaderTitle> 
+		<factionIconPath>Things/UI/Legion</factionIconPath>
+        <factionNameMaker>NameLegion</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <techLevel>Industrial</techLevel>
+        <backstoryCategories>
+            <li>Civil</li>
+        </backstoryCategories>
+        <geneticVariance>0.9</geneticVariance>
+        <hairTags>
+            <li>Rural</li> 
+			<li>Urban</li>
+        </hairTags>
+        <caravanTraderKinds>
+            <li>Caravan_Outlander_BulkGoods</li>
+            <li>Caravan_Outlander_CombatSupplier</li>
+            <li>Caravan_Outlander_Exotic</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Visitor_Outlander_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>Base_Outlander_Standard</li>
+        </baseTraderKinds>
+    <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+		
+        <!-- Low Level fight -->
+				<li>
+					<kindDef>Combat</kindDef>
+					<commonality>60</commonality>
+						<options>
+						  <FCP_Legion_RecruitLegionary>10</FCP_Legion_RecruitLegionary>
+						  <FCP_Legion_RecruitDecanus>5</FCP_Legion_RecruitDecanus>
+						</options>
+				</li>    
+				
+				<!-- Medium Level fight -->
+				<li>
+                <kindDef>Combat</kindDef>
+                <commonality>50</commonality>
+					<options>
+					  <FCP_Legion_RecruitLegionary>10</FCP_Legion_RecruitLegionary>
+					  <FCP_Legion_RecruitDecanus>5</FCP_Legion_RecruitDecanus>
+					  <FCP_Legion_PrimeLegionary>10</FCP_Legion_PrimeLegionary>
+					  <FCP_Legion_PrimeLegionaryDecanus>5</FCP_Legion_PrimeLegionaryDecanus>
+					</options>
+				</li>  
+				
+		 <!--High Level -->
+				<li>
+				<kindDef>Combat</kindDef>
+                <commonality>40</commonality>
+					<options>
+					<FCP_Legion_Centurian>5</FCP_Legion_Centurian>
+					<FCP_Legion_VeteranDecanus>10</FCP_Legion_VeteranDecanus>
+					<FCP_Legion_Veteran>5</FCP_Legion_Veteran>	
+					</options>
+				</li>	
+				
+		 <!--Hound masters 1/3 Human to Dog ratio -->
+				<li>
+				<kindDef>Combat</kindDef>
+                <commonality>20</commonality>
+					<options>
+					<FCP_LegionMongrel>15</FCP_LegionMongrel>
+					<FCP_Legion_Houndmaster>5</FCP_Legion_Houndmaster>
+					</options>
+				</li>	
+			
+
+		 <!-- Scouting Party 2/1 Human to dog ratio-->
+				<li>
+				<kindDef>Combat</kindDef>
+                <commonality>20</commonality>
+					<options>
+					<FCP_LegionMongrel>5</FCP_LegionMongrel>
+					<FCP_Legion_Scout>10</FCP_Legion_Scout>
+					</options>
+				</li>
+
+				
+		<!-- Visitors-->
+				<li>
+				<kindDef>Peaceful</kindDef>
+                <commonality>10</commonality>
+					<options>
+					  <FCP_Legion_Explorer>5</FCP_Legion_Explorer>
+					  <FCP_Legion_Vexillarius>4</FCP_Legion_Vexillarius>
+					</options>
+				</li>
+				<!--High Level Mixed -->
+            <li>
+                <kindDef>Settlement</kindDef>
+					<options>
+					  <FCP_Legion_Legate>1</FCP_Legion_Legate>
+					  <FCP_Legion_Blacksmith>6</FCP_Legion_Blacksmith>	
+					  <FCP_Legion_Praetorian>4</FCP_Legion_Praetorian>
+					  <FCP_Legion_Vexillarius>4</FCP_Legion_Vexillarius>	
+					  <FCP_Legion_Veteran>8</FCP_Legion_Veteran>	
+					  <FCP_Legion_Centurian>4</FCP_Legion_Centurian>		
+					  <FCP_Legion_VeteranDecanus>4</FCP_Legion_VeteranDecanus>
+					  <FCP_LegionMongrel>5</FCP_LegionMongrel>
+					  </options>
+            </li>
+        </pawnGroupMakers>  
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    </FactionDef>
+	
+    <FactionDef ParentName="FCPLegionFactionBase">
+     <defName>FCPLegionFaction</defName>
+     <label>The Legion</label>
+     <description>Caesar's Legion is an imperialistic, ultra-reactionary totalitarian dictatorship based on large scale slavery. Founded in 2247 by Edward Sallow, its Caesar, and Joshua Graham (also known as the Malpais Legate). The Legion uses trappings of the ancient Roman Empire as part of a unifying identity imposed on its tribes but does not recreate any cultural, social, or political institutions of ancient Rome.</description>
+	<colorSpectrum>
+      <li>(1, 1, 1)</li>
+    </colorSpectrum>
+    <startingGoodwill>0</startingGoodwill>
+	<naturalColonyGoodwill>-10~50</naturalColonyGoodwill>
+	<modExtensions>
+		<li Class="FalloutCore.CallOptions">
+			<options>
+				<li>
+					<text>TEST1</text>
+					<message>TEST1</message>
+					<callIncidentDef>FC_RaidFriendlyVertibirds</callIncidentDef>
+					<goodwillCost>-10</goodwillCost>
+				</li>
+			</options>
+		</li>
+	</modExtensions>
+    </FactionDef>
+
+
+	<RulePackDef>
+		<defName>NameLegion</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->The Legion</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

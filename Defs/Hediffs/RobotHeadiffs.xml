@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef Name="Handy_RacialBase" Abstract="True">
+    <hediffClass>HediffWithComps</hediffClass>    
+    <defaultLabelColor>(0.0, 0.8, 0.0)</defaultLabelColor>
+    <initialSeverity>0.0</initialSeverity>
+	<isBad>false</isBad>
+	<scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+
+
+  <HediffGiverSetDef>
+    <defName>Handy_RobotTraitsGiver</defName>
+    <hediffGivers>
+      
+      <!-- Environmental -->
+      <li Class="HediffGiver_Bleeding">
+        <hediff>BloodLoss</hediff>
+      </li>
+      <li Class="HediffGiver_Hypothermia">
+        <hediff>Hypothermia</hediff>
+      </li>
+      <li Class="HediffGiver_Heat">
+        <hediff>Heatstroke</hediff>
+      </li>
+
+
+        <!-- Responsive and special -->
+	  
+    </hediffGivers>
+  </HediffGiverSetDef>  
+  
+  <HediffDef ParentName="RobotHediffBase">
+    <defName>RobotPain</defName>
+    <label>Painless</label>	
+	<description>[PAWN_nameDef] is not a mortal and therefore does not feel pain.</description>
+    <labelNoun>[PAWN_nameDef] feels no pain.</labelNoun>
+    <stages>
+				<li>
+			<painFactor>0</painFactor>
+		        </li>	
+    </stages>  
+
+  </HediffDef>
+ 
+ <HediffDef ParentName="RobotHediffBase">
+    <defName>RobotRest</defName>
+    <label>Restless</label>
+	<description>[PAWN_nameDef] is not a mortal and therefore does not feel tiredness.</description>
+    <labelNoun>[PAWN_nameDef] needs no sleep.</labelNoun>
+    <stages>
+		        <li>
+          <restFallFactor>0</restFallFactor>
+				</li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef Name="RobotHediffBase" Abstract="True">
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+
+  </HediffDef>
+</Defs>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Silver"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/BottleCaps</texPath>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "MineableSilver"]/building/mineableThing</xpath>
+		<value>
+			<mineableThing>ReplacedSilver</mineableThing>
+		</value>
+	</Operation>
+
+</Patch>

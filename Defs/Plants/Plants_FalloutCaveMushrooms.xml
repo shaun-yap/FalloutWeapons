@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="CavePlantBase" ParentName="PlantBase" Abstract="True">
+    <plant>
+      <neverBlightable>true</neverBlightable>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+      <cavePlant>true</cavePlant>
+      <wildOrder>1</wildOrder>
+      <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="CavePlantBase">
+    <defName>PlantGlowingfungus</defName>
+    <label>Glowingfungus</label>
+    <description>Glowing fungus, or Flammulina velutipes, is a mutated variant of the pre-War fungus. Common in temperate areas, the medicinal properties of the original mushroom have been enhanced by radioactive exposure, allowing it to be used in a variety of potent medicines, such as herbal treatments or even post-War RadAway. The mushrooms have also developed a distinct bioluminescence, making them easily identifiable.</description>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>2</Beauty>
+      <Nutrition>0.35</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Crops/Plants/GlowingfungusPlant</texPath>
+      <graphicClass>Graphic_single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <pathCost>10</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.01</fertilityMin>
+      <fertilitySensitivity>0.15</fertilitySensitivity>
+      <growDays>40</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestYield>5</harvestYield>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>RawGlowingfungus</harvestedThingDef>
+	  		<sowTags>
+				<li>Hydroponic</li>
+			</sowTags>
+      <maxMeshCount>4</maxMeshCount>
+      <neverBlightable>true</neverBlightable>
+	  <immatureGraphicPath>Things/Crops/Immature/GlowingfungusPlant</immatureGraphicPath>
+      <visualSizeRange>0.4~0.7</visualSizeRange>
+      <topWindExposure>0.05</topWindExposure>
+      <wildClusterRadius>3</wildClusterRadius>
+      <wildClusterWeight>5</wildClusterWeight>
+      <purpose>Food</purpose>
+    </plant>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(5,25,32,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+  
+   <ThingDef ParentName="CavePlantBase">
+    <defName>PlantBrainfungus</defName>
+    <label>Brainfungus</label>
+    <description>A pale fungus whose physical appearance bears a striking resemblance to a brain.</description>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Beauty>2</Beauty>
+      <Nutrition>0.5</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Crops/Plants/BrainFungusPlant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.2, 0.3, 0.13)</volume>
+        <offset>(-0.03,0,-0.44)</offset>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <pathCost>25</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.01</fertilityMin>
+      <fertilitySensitivity>0.15</fertilitySensitivity>
+      <growDays>60</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestYield>6</harvestYield>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>RawBrainFungus</harvestedThingDef>
+			<sowTags>
+				<li>Hydroponic</li>
+			</sowTags>
+      <neverBlightable>true</neverBlightable>
+	  <immatureGraphicPath>Things/Crops/Immature/BrainFungusPlant</immatureGraphicPath>
+      <visualSizeRange>0.9~1.5</visualSizeRange>
+      <topWindExposure>0.1</topWindExposure>
+      <cavePlantWeight>0.17</cavePlantWeight>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+
+</Defs>

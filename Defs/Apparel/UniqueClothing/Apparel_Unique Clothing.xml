@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef ParentName="ApparelMakeableBase">
+	<defName>FCPApparel_VaqueroOutfit</defName>
+	<label>Vaquero Outfit</label>
+	<description>A pre-war, Halloween costume that Raul had found in an abandoned costume shop in Mexico City, Raul used it as his calling card in his younger days earning him several nicknames around Mexico city.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Unique/VaqueroOutfit</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+    <generateCommonality>0.05</generateCommonality>
+	<costList>
+		<Cloth>120</Cloth>
+	</costList>
+	<thingCategories>
+		<li>Apparel</li>
+	</thingCategories>
+	<statBases>
+		<Flammability>0.2</Flammability>
+		<Mass>1</Mass>
+		<MarketValue>100</MarketValue>
+		<WorkToMake>1500</WorkToMake>
+		<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.3</ArmorRating_Heat>
+		<Insulation_Cold>18</Insulation_Cold>
+		<Insulation_Heat>15</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+		<TradePriceImprovement>0.10</TradePriceImprovement>
+		<SocialImpact>0.10</SocialImpact>
+		<CarryingCapacity>15</CarryingCapacity>
+	</equippedStatOffsets>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Unique/VaqueroOutfit</wornGraphicPath>
+		<layers>
+			<li>Middle</li>
+			<li>OnSkin</li>
+		</layers>
+		<tags>
+			<li>Raul</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Raul</li>
+		</defaultOutfitTags>
+	</apparel>
+</ThingDef>
+</Defs>

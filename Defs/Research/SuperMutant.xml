@@ -1,0 +1,39 @@
+﻿<?Yml version="1.0" encoding="utf8" ?>
+<Defs>
+
+	<ResearchTabDef>
+		<defName>FCPSuperMutantTab</defName>
+		<label>Mariposa</label>
+	</ResearchTabDef>
+
+
+  <ResearchProjectDef>
+    <defName>FCPFEVvat</defName>
+    <label>FEV Vat</label>	
+	<tab>FCPSuperMutantTab</tab>
+    <description>Learn how to use FEV to create super mutants.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>MultiAnalyzer</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+
+   <ResearchProjectDef>
+    <defName>FCPMutantArmor</defName>
+    <label>Super Mutant Armor</label>
+	<tab>FCPSuperMutantTab</tab>
+    <description>Craft large armor, large enough to fit a super mutant.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Machining</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+  </ResearchProjectDef>
+  
+
+</Defs>

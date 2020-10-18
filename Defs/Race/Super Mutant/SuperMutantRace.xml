@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>FCPSuperMutant</defName>
+    <label>Super Mutant</label>
+    <description>Mariposa super mutants are super mutants created by exposure to the Forced Evolutionary Virus II from the vats of the Mariposa Military Base in California. They represent the finest form of super mutants, far more advanced than their primitive East Coast cousins created by imperfect strains of the virus.</description>
+	<alienRace Inherit="False">
+	  <generalSettings>
+		<maleGenderProbability>1</maleGenderProbability>
+        <humanRecipeImport>true</humanRecipeImport>
+	    <allowHumanBios>false</allowHumanBios>
+		<immuneToAge>true</immuneToAge>
+		
+
+		<!--forcedRaceTraitEntries>
+             <li>
+				<defName>Trait_SuperMutant</defName>
+				 			</li>
+		</forcedRaceTraitEntries-->
+			
+				<disallowedTraits>
+				     <li>
+                        <defName>AnnoyingVoice</defName>
+					</li>
+					 <li>
+                        <defName>CreepyBreathing</defName>
+					</li>
+					<li>
+                        <defName>Beautiful</defName>
+					</li>
+					<li>
+                        <defName>Wimp</defName>
+					</li>
+					<li>
+                        <defName>SuperImmune</defName>
+					</li>
+					<li>
+                        <defName>Gay</defName>
+					</li>
+				</disallowedTraits>
+			<alienPartGenerator>
+			<aliencrowntypes>
+                <li>Average_Normal</li>
+                </aliencrowntypes>
+
+            <headOffset>(0.3, 0.4)</headOffset>
+
+
+
+
+          <alienbodytypes>
+            <li>Hulk</li>
+          </alienbodytypes>
+
+		<useGenderedHeads>true</useGenderedHeads>
+        <customDrawSize>(1.5, 1.5)</customDrawSize>
+        <customHeadDrawSize>(1.15, 1.15)</customHeadDrawSize>
+        <customPortraitDrawSize>(1.5, 1.5)</customPortraitDrawSize>
+        <customPortraitHeadDrawSize>(1.1, 1.1)</customPortraitHeadDrawSize>
+
+
+
+
+
+		<colorChannels>
+			<li>
+				<name>skin</name>
+				<first Class="ColorGenerator_Options">
+				<options>
+								 <!--4f5933-->
+
+                    <li>
+                        <weight>5</weight>
+                        <only>RGBA(0.31,0.35,0.2,1)</only>
+                    </li> 
+				 <!--6c7946-->
+                    <li>
+                        <weight>5</weight>
+                        <only>RGBA(0.42,0.47,0.27,1)</only>
+                    </li> 
+					<!--##41492a-->
+                    <li>
+                        <weight>5</weight>
+                        <only>RGBA(0.35,0.39,0.22,1)</only>
+                    </li> 
+
+                </options>
+		</first>
+
+			</li>
+		</colorChannels>
+			</alienPartGenerator>
+		<canLayDown>true</canLayDown>		
+	  </generalSettings>
+		<graphicPaths>
+			<li>
+				<body>SuperMutant/Body/</body>
+				<head>SuperMutant/Head/</head>
+			</li>
+		</graphicPaths>
+		
+        <hairSettings>
+            <hasHair>false</hasHair>
+        </hairSettings>
+		
+		<relationSettings>
+            <relationChanceModifierLover>0</relationChanceModifierLover>
+            <relationChanceModifierExLover>0</relationChanceModifierExLover>
+            <relationChanceModifierFiance>0</relationChanceModifierFiance>
+            <relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+            <relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+            <relationChanceModifierParent>0</relationChanceModifierParent>
+            <relationChanceModifierChild>0</relationChanceModifierChild>
+            <relationChanceModifierSibling>0</relationChanceModifierSibling>
+        </relationSettings>
+		
+		
+		
+	<raceRestriction>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
+				<apparelList>
+                <li>FCP_SM_Basic_Armor</li>    
+                <li>FCP_SMM_Leg_Armor</li>    
+                <li>FCP_SM_MastersArms_Armor</li>    
+                <li>FCP_SM_HG_PatrolHat</li>    
+                <li>FCP_Apparel_SM_PatrolCombatArmor</li>    
+                <li>FCP_SM_Brute_Armor</li>    
+                <li>FCP_SM_Master_Armor</li>    
+                <li>FCP_SM_Goggle</li>    
+				<li>Apparel_MutantPants</li>
+				<!--li>FCP_SM_Brute_Armor</li-->
+				<li>FCP_SM_Tire_Armor</li>
+				<li>FCP_SM_BruteArms_Armor</li>
+				<li>FCP_SM_Master_Helmet</li>
+				<li>FCP_SM_Leg_Armor</li>
+				<li>FCP_SMB_Leg_Armor</li>
+				<li>FCP_SM_Brute_Helmet</li>
+            </apparelList>
+	</raceRestriction>
+			<thoughtSettings>
+			<cannotReceiveThoughtsAtAll>false</cannotReceiveThoughtsAtAll>
+				<!--cannotReceiveThoughts>			
+					<li>WitnessedDeathFamily</li>
+				</cannotReceiveThoughts-->
+			<!--replacerList>
+			
+                <li>
+                    <original>KnowPrisonerSold</original>
+                    <replacer>SuperMutantKnowPrisonerSold</replacer> 
+                </li>         
+				<li>
+                    <original>ButcheredHumanlikeCorpse</original>
+                    <replacer>SuperMutantButcheredHumanlikeCorpse</replacer> 
+                </li>    	    
+				<li>
+                    <original>KnowButcheredHumanlikeCorpse</original>
+                    <replacer>SuperMutantKnowButcheredHumanlikeCorpse</replacer> 
+                </li>       
+				<li>
+                    <original>ObservedLayingCorpse</original>
+                    <replacer>SuperMutantObservedLayingCorpse</replacer> 
+                </li>             
+				<li>
+                    <original>WitnessedDeathAlly</original>
+                    <replacer>SuperMutantWitnessedDeathAlly</replacer> 
+                </li>		
+				<li>
+                    <original>WitnessedDeathNonAlly</original>
+                    <replacer>SuperMutantWitnessedDeathNonAlly</replacer> 
+                </li>       
+				<li>
+                    <original>Nuzzled</original>
+                    <replacer>SuperMutantNuzzled</replacer> 
+                </li>       
+				<li>
+                    <original>KnowBuriedInSarcophagus</original>
+                    <replacer>SuperMutantKnowBuriedInSarcophagus</replacer> 
+                </li>
+				<li>
+                    <original>ObservedLayingRottingCorpse</original>
+                    <replacer>SuperMutantObservedLayingRottingCorpse</replacer> 
+                </li>       
+            </replacerList-->
+				
+			</thoughtSettings>
+	</alienRace>
+    <statBases>		
+	
+	<!--IncomingDamageFactor>0.75</IncomingDamageFactor-->
+
+			<ToxicSensitivity>0</ToxicSensitivity>
+			<PawnBeauty>-1</PawnBeauty>
+			<MarketValue>2500</MarketValue>
+			<MoveSpeed>4.4</MoveSpeed>
+			<Flammability>0.8</Flammability>
+			<ImmunityGainSpeed>4</ImmunityGainSpeed>
+			<CarryingCapacity>150</CarryingCapacity>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<ComfyTemperatureMin>7</ComfyTemperatureMin>
+			<ComfyTemperatureMax>38</ComfyTemperatureMax>
+			<PainShockThreshold>3</PainShockThreshold>
+			<!-- A 70kg male eats roughly 2500 calories  -->
+			<!-- A 350kg person who is about 10 and a half feet tall eats roughly 8500 calories  -->
+		<HungerRateMultiplier>3.25</HungerRateMultiplier>		
+			<!-- Humans have a mass of 70kg  -->
+		<Mass>362</Mass>
+		<EatingSpeed>1</EatingSpeed>
+		<WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+		<MeatAmount>200</MeatAmount>
+		<ResearchSpeed>1</ResearchSpeed>
+		<PlantWorkSpeed>1</PlantWorkSpeed>
+		<LeatherAmount>175</LeatherAmount>
+		<GlobalLearningFactor>1</GlobalLearningFactor>
+		
+<!--social is lower because they are worse at speaking -->
+
+			  <NegotiationAbility>1</NegotiationAbility>
+			  <TradePriceImprovement>1</TradePriceImprovement>
+			  <SocialImpact>0.75</SocialImpact>
+			  
+<!--violence -->
+			  <HuntingStealth>1</HuntingStealth>
+
+
+<!--foragers -->
+			  <CookSpeed>1</CookSpeed>
+			  <ButcheryFleshSpeed>2</ButcheryFleshSpeed>
+			  <ButcheryFleshEfficiency>1</ButcheryFleshEfficiency>
+			  
+<!--primative -->
+			  <DrugCookingSpeed>1</DrugCookingSpeed>
+			  <!--TailoringSpeed>1</TailoringSpeed-->
+			  <SmeltingSpeed>1</SmeltingSpeed>
+			  <MedicalTendQuality>1</MedicalTendQuality>
+			  <MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance>
+
+
+<!--animal-like -->
+			  <PsychicSensitivity>2</PsychicSensitivity>
+			  <TrainAnimalChance>1</TrainAnimalChance>
+			  <TameAnimalChance>1</TameAnimalChance>
+			  <SmoothingSpeed>1</SmoothingSpeed>
+			  <AnimalGatherSpeed>1</AnimalGatherSpeed>			  
+              <MiningSpeed>2</MiningSpeed>
+			  <MeleeDodgeChance>0.67</MeleeDodgeChance>
+
+    </statBases>
+	
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.07</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>500</lifeExpectancy>
+      <leatherDef>FCPLeather_SuperMutant</leatherDef>
+      <nameCategory>HumanStandard</nameCategory>
+      <body>Human</body>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>45</gestationPeriodDays>
+      <meatMarketValue>0.4</meatMarketValue>
+      <manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>
+	  
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.01, 0.02)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+	  
+      <lifeStageAges>
+        <li>
+          <def>SuperMutant</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>SuperMutantBrute</def>
+          <minAge>70</minAge>
+        </li>
+        <li>
+          <def>SuperMutantMaster</def>
+          <minAge>100</minAge>
+        </li>
+      </lifeStageAges>
+	  
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.4, 0.9, 0.5)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+          <li>(18,0)</li>
+          <li>(20,100)</li>
+          <li>(50,100)</li>
+          <li>(60,30)</li>
+          <li>(100,18)</li>
+          <li>(150,10)</li>
+          <li>(270,3)</li>
+          <li>(300,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>    
+        <li>Human</li>
+      </hediffGiverSets>
+    </race>
+    <recipes>
+      <li>ExciseCarcinoma</li>
+      <li>AdministerMechSerumHealer</li>
+      <li>RemoveBodyPart</li>
+      <li>Euthanize</li>
+      <li>Anesthetize</li>
+    </recipes>	
+	<!--butcherProducts>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+	</butcherProducts-->
+
+
+
+
+
+
+  </AlienRace.ThingDef_AlienRace>
+</Defs>

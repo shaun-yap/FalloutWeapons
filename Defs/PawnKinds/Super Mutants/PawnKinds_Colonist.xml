@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <PawnKindDef>
+		<defName>FCPSuperMutant_Pawn</defName>
+		<label>super mutant</label>	
+		<race>FCPSuperMutant</race>
+		<combatPower>50</combatPower>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+	
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+			<li>SuperMutantCatagory</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
+		
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+		
+		<apparelTags>
+			<li>Neolithic</li>
+		</apparelTags>
+		
+		<apparelMoney>
+			<min>0</min>
+			<max>0</max>
+		</apparelMoney>
+		
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		
+		<techHediffsMoney>
+			<min>0</min>
+			<max>10</max>
+		</techHediffsMoney>
+		
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		
+		<techHediffsChance>0.00</techHediffsChance>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>65</maxGenerationAge>
+	
+	</PawnKindDef>
+  
+<PawnKindDef Abstract="True" Name="FCPSuperMutantPlayerBase">
+    <race>FCPSuperMutant</race>
+    <combatPower>50</combatPower>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+</PawnKindDef>
+
+<!-- Colonist -->
+	<PawnKindDef ParentName="FCPSuperMutantPlayerBase">
+		<defName>FCPSuperMutant_Colonist</defName>
+		<label>colonist</label>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+	
+		<backstoryFiltersOverride>
+				<li>
+					<categories>
+					<li>SuperMutantCatagory</li>
+					</categories>
+				</li>
+		</backstoryFiltersOverride>
+
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+	
+		<apparelTags>
+		<li>IndustrialBasic</li>
+		</apparelTags>
+	
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+	
+		<apparelMoney>
+			<min>350</min>
+			<max>600</max>
+		</apparelMoney>
+	
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.00</techHediffsChance>
+	
+		<!--techHediffsMoney>
+		<min>0</min>
+		<max>1</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+		</techHediffsTags-->
+
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>65</maxGenerationAge>	
+	</PawnKindDef>
+		
+		<PawnKindDef ParentName="FCPSuperMutantPlayerBase">
+		<defName>FCPSuperMutant_ColonistDumb</defName>
+		<label>colonist</label>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+	
+		<backstoryFiltersOverride>
+				<li>
+					<categories>
+					<li>SuperMutantCatagory</li>
+					</categories>
+				</li>
+		</backstoryFiltersOverride>
+
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+	
+		<apparelTags>
+		<li>IndustrialBasic</li>
+		</apparelTags>
+	
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+	
+		<apparelMoney>
+			<min>350</min>
+			<max>600</max>
+		</apparelMoney>
+	
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.00</techHediffsChance>
+	
+		<!--techHediffsMoney>
+		<min>0</min>
+		<max>1</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+		</techHediffsTags-->
+
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>65</maxGenerationAge>	
+		</PawnKindDef>
+
+</Defs>

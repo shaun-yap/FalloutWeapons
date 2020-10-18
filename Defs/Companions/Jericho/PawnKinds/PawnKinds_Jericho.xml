@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <PawnKindDef>
+    <defName>FCPCompanion_Jericho</defName>
+    <label>human</label>	
+    <race>FCP_Jericho</race>
+	<combatPower>50</combatPower>  
+  <defaultFactionType>Jericho_Human_Faction</defaultFactionType> 
+
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+<backstoryFiltersOverride>  
+        <li>
+            <categories>
+      <li>FCP_Jericho</li>
+			</categories>
+        </li>
+    </backstoryFiltersOverride>
+    <chemicalAddictionChance>0.00</chemicalAddictionChance>
+    <apparelRequired>
+      <li>Apparel_BasicShirt</li>
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+    <apparelColor>(20,20,20)</apparelColor>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>
+      <min>0</min>
+      <max>10</max>
+    </techHediffsMoney>
+    <weaponTags>
+      <li>ChineseAssaultRifle</li>
+    </weaponTags>
+    <techHediffsChance>0.00</techHediffsChance>
+	<gearHealthRange>1~1</gearHealthRange>
+	<minGenerationAge>55</minGenerationAge>
+    <maxGenerationAge>65</maxGenerationAge>
+	 <weaponMoney>500~500</weaponMoney>
+	 <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>10~15</range>
+      </li>
+    </skills>
+	</PawnKindDef>
+<!-- Colonist -->
+</Defs>

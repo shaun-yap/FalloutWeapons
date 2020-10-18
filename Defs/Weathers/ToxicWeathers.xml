@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<WeatherDef>
+		<defName>FC_ToxicRain</defName>
+		<label>Toxic rain</label>
+		<isBad>true</isBad>
+		<description>Reduces accuracy and movement speed.</description>
+		<temperatureRange>0~999</temperatureRange>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<favorability>Neutral</favorability>
+		<perceivePriority>1</perceivePriority>
+		<exposedThought>ToxicRainThought</exposedThought>
+		<accuracyMultiplier>0.5</accuracyMultiplier>
+		<rainRate>1</rainRate>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<ambientSounds>
+			<li>Ambient_Wind_Fog</li>
+			<li>Ambient_Rain</li>
+		</ambientSounds>
+		<durationRange>
+			<min>60000</min>
+			<max>120000</max>
+		</durationRange>
+		<overlayClasses>
+			<li>FalloutCore.WeatherOverlay_ToxicRain</li>
+		</overlayClasses>
+		<commonalityRainfallFactor>
+			<points>
+				<li>(0, 0)</li>
+				<li>(1300, 1)</li>
+			</points>
+		</commonalityRainfallFactor>   
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.7,0.7,0.7)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+		<modExtensions>
+			<li Class="FalloutCore.WeatherEffects">
+				<ticksInterval>100</ticksInterval>
+				<severity>0.028758334</severity>
+				<hediffDefnames>
+					<li>ToxicBuildup</li>
+				</hediffDefnames>
+				<causesRotting>True</causesRotting>
+				<killingPlants>True</killingPlants>
+			</li>
+		</modExtensions>
+	</WeatherDef>
+
+	<WeatherDef>
+		<defName>FC_ToxicFoggyRain</defName>
+		<label>Toxic foggy rain</label>
+		<isBad>true</isBad>
+		<description>Reduces accuracy and movement speed.</description>
+		<temperatureRange>0~999</temperatureRange>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<favorability>Neutral</favorability>
+		<perceivePriority>1</perceivePriority>
+		<exposedThought>ToxicFoggyRainThought</exposedThought>
+		<accuracyMultiplier>0.5</accuracyMultiplier>
+		<rainRate>1</rainRate>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<ambientSounds>
+			<li>Ambient_Wind_Fog</li>
+			<li>Ambient_Rain</li>
+		</ambientSounds>
+		<durationRange>
+			<min>60000</min>
+			<max>120000</max>
+		</durationRange>
+		<overlayClasses>
+			<li>WeatherOverlay_Fog</li>
+			<li>FalloutCore.WeatherOverlay_ToxicRain</li>
+		</overlayClasses>
+		<commonalityRainfallFactor>
+			<points>
+				<li>(0, 0)</li>
+				<li>(1300, 1)</li>
+			</points>
+		</commonalityRainfallFactor>   
+		<!-- Colors are Overcast -->
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.7,0.7,0.7)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+		<modExtensions>
+			<li Class="FalloutCore.WeatherEffects">
+				<ticksInterval>100</ticksInterval>
+				<severity>0.028758334</severity>
+				<hediffDefnames>
+					<li>ToxicBuildup</li>
+				</hediffDefnames>
+				<causesRotting>True</causesRotting>
+				<killingPlants>True</killingPlants>
+			</li>
+		</modExtensions>
+	</WeatherDef>
+
+	<WeatherDef>
+		<defName>FC_ToxicThunderstorm</defName>
+		<label>Toxic thunderstorm</label>
+		<description>Toxic Thunderstorm</description>
+		<temperatureRange>
+			<min>-250</min>
+			<max>999</max>
+		</temperatureRange>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<favorability>Bad</favorability>
+		<perceivePriority>2</perceivePriority>
+		<exposedThought>ToxicThunderstormThought</exposedThought>
+		<accuracyMultiplier>0.5</accuracyMultiplier>
+		<rainRate>1</rainRate>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<ambientSounds>
+			<li>Ambient_Wind_Storm</li>
+			<li>Ambient_Rain</li>
+		</ambientSounds>
+		<durationRange>
+			<min>60000</min>
+			<max>120000</max>
+		</durationRange>
+		<eventMakers>
+			<li>
+				<averageInterval>600</averageInterval>
+				<eventClass>FalloutCore.WeatherEvent_ToxicThunderstorm</eventClass>
+			</li>
+		</eventMakers>
+		<overlayClasses>
+			<li>WeatherOverlay_Fog</li>
+			<li>FalloutCore.WeatherOverlay_ToxicRain</li>
+		</overlayClasses>
+		<commonalityRainfallFactor>
+			<points>
+				<li>(0, 0)</li>
+				<li>(1300, 1)</li>
+				<li>(4000, 2.0)</li>
+			</points>
+		</commonalityRainfallFactor>
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.7,0.7,0.7)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+		<modExtensions>
+			<li Class="FalloutCore.WeatherEffects">
+				<ticksInterval>100</ticksInterval>
+				<severity>0.028758334</severity>
+				<hediffDefnames>
+					<li>ToxicBuildup</li>
+				</hediffDefnames>
+				<causesRotting>True</causesRotting>
+				<killingPlants>True</killingPlants>
+			</li>
+		</modExtensions>
+	</WeatherDef>
+</Defs>

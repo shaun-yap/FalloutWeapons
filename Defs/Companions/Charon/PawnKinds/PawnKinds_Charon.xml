@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <PawnKindDef>
+    <defName>FCPCompanion_Charon</defName>
+    <label>ghoul</label>	
+    <race>FCP_Charon</race>
+	<combatPower>50</combatPower>  
+  <defaultFactionType>Charon_Ghoul_Faction</defaultFactionType> 
+
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+<backstoryFiltersOverride>  
+        <li>
+            <categories>
+      <li>FCP_Charon</li>
+			</categories>
+        </li>
+    </backstoryFiltersOverride>
+    <chemicalAddictionChance>0.00</chemicalAddictionChance>
+    <apparelRequired>
+      <li>Apparel_BasicShirt</li>
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+    <apparelColor>(20,20,20)</apparelColor>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>
+      <min>0</min>
+      <max>10</max>
+    </techHediffsMoney>
+    <weaponTags>
+      <li>RiotShotgun</li>
+    </weaponTags>
+    <techHediffsChance>0.00</techHediffsChance>
+	<gearHealthRange>1~1</gearHealthRange>
+	<minGenerationAge>45</minGenerationAge>
+    <maxGenerationAge>45</maxGenerationAge>
+	 <weaponMoney>500~500</weaponMoney>
+	 <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>12~15</range>
+      </li>
+    </skills>
+	</PawnKindDef>
+</Defs>

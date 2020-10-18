@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+<ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_KnowPrisonerSold</defName>
+    <durationDays>4</durationDays>
+    <stackLimit>5</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>prisoner sold</label>
+        <description>Eesh. These prisoners look how I feel, boss.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_AteWithoutTable</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>ate without table</label>
+        <description>I can't believe I'm about to do this, boss.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_SleepDisturbed</defName>
+    <icon>Things/Mote/ThoughtSymbol/SleepZ</icon>
+    <showBubble>true</showBubble>
+    <durationDays>1</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>disturbed sleep</label>
+        <description>Hey Boss, I don't like noisy people waking me up, it reminds me of what happened to my ranch.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_NewColonyOptimism</defName>
+    <durationDays>8</durationDays>
+    <nextThought>NewColonyHope</nextThought>
+    <stages>
+      <li>
+        <label>initial optimism</label>
+        <description>Hey, as long as you're not asking me to go back to Black Mountain, I'm a happy old man.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_NewColonyHope</defName>
+    <durationDays>8</durationDays>
+    <stages>
+      <li>
+        <label>initial hope</label>
+        <description>I'm always happy to be here for you, boss.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_SleptOutside</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>slept outside</label>
+        <description>Hey, don't worry about it, boss. The decrepit old man can easily sleep outside with all the bugs for you. Really.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_SleptOnGround</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>slept on ground</label>
+        <description>Sure, boss. The old man will sleep on the dirt for you.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_SleptInCold</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>slept in the cold</label>
+        <description>Hey, boss, I left my warm clothes in Mexico.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_SleptInHeat</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>slept in the heat</label>
+        <description>I had to sleep in unbearable heat. Can't we have air conditioning?</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_FreedFromSlavery</defName>
+    <durationDays>20</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>freed from slavery</label>
+        <description>I was kind of hoping you were here to set me free. But maybe I'm not a pretty enough damsel for that, huh?</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_ReleasedHealthyPrisoner</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>5</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>prisoner released</label>
+        <description>We released a healthy prisoner, boss. You don't make me feel so special anymore.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_KnowGuestOrganHarvested</defName>
+    <durationDays>8</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>someone's organ harvested</label>
+        <description>The colony took body parts from a guest or prisoner. It's horrible, breaking someone down for parts when they have no choice.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_KnowColonistOrganHarvested</defName>
+    <durationDays>8</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>colonist's organ harvested</label>
+        <description>Someone took body parts from a colonist, boss. It's a horrible thing to think about.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_MyOrganHarvested</defName>
+    <durationDays>8</durationDays>
+    <stackLimit>5</stackLimit>
+    <stages>
+      <li>
+        <label>my organ harvested</label>
+        <description>Hey, I'm one of you! Don't eat me, eat the smoothskin! Oh, uh, sorry boss.</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_WasImprisoned</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>was imprisoned</label>
+        <description>Sure, boss. I'd be happy to prolong my captivity and psychological abuse to tighten some lug nuts for you</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_Catharsis</defName>
+    <durationDays>3</durationDays>
+    <stackLimit>5</stackLimit>
+    <stages>
+      <li>
+        <label>catharsis</label>
+        <description>Boss, it felt good to finally unbottle my feelings.</description>
+        <baseMoodEffect>40</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_Nuzzled</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>nuzzled</label>
+        <description>Boss, did you see that giant animal?</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_KnowBuriedInSarcophagus</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>10</stackLimit>
+    <stages>
+      <li>
+        <label>buried in sarcophagus</label>
+        <description>Hey, boss, can I get one of these?</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_SoakingWet</defName>
+    <durationDays>0.1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>soaking wet</label>
+        <description>Sure, boss, let the old man suffer in the rain.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- ============== Human corpse butchering ===============-->
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_ButcheredHumanlikeCorpse</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>10</stackLimit>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+      <li>Cannibal</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>I butchered humanlike</label>
+        <description>Boss, this isn't like butchering an animal at all.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_KnowButcheredHumanlikeCorpse</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+      <li>Cannibal</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>we butchered humanlike</label>
+        <description>I guess butchering down people like animals is okay. I mean, they're already dead anyways, right boss?</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+  <!-- ============== Combat ============== -->
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_ObservedLayingCorpse</defName>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <showBubble>true</showBubble>
+    <thoughtClass>Thought_MemoryObservation</thoughtClass>
+    <durationDays>0.5</durationDays>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <stackLimit>3</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+      <li>Cannibal</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>observed corpse</label>
+        <description>This type of view isn't pretty. But then, neither am I, but you keep me around.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_ObservedLayingRottingCorpse</defName>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <showBubble>true</showBubble>
+    <thoughtClass>Thought_MemoryObservation</thoughtClass>
+    <durationDays>0.5</durationDays>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <stackLimit>5</stackLimit>
+    <nullifyingTraits>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>observed rotting corpse</label>
+        <description>It's like looking into a mirror.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_WitnessedDeathAlly</defName>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <showBubble>true</showBubble>
+    <durationDays>2</durationDays>
+    <stackLimit>5</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>witnessed ally's death</label>
+        <description>I saw one of our people die, boss. I couldn't save them...</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_WitnessedDeathNonAlly</defName>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <showBubble>true</showBubble>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>witnessed outsider's death</label>
+        <description>Eesh. These soldiers look how I feel, boss.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_WitnessedDeathFamily</defName>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <showBubble>true</showBubble>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>witnessed family member's death</label>
+        <description>I saw a member of my family die, boss.. I coudn't save them...</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_DefeatedHostileFactionLeader</defName>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <showBubble>true</showBubble>
+    <durationDays>6</durationDays>
+    <stackLimit>5</stackLimit>
+    <stages>
+      <li>
+        <label>defeated hostile leader {0}</label>
+        <description>They were leading efforts to destroy us, boss, but, the ghost strikes again!</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+  <!-- Banishing pawns -->
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_ColonistBanished</defName>
+    <thoughtClass>Thought_Banished</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>5</stackLimit>
+    <showBubble>true</showBubble>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>colonist banished</label>
+        <description>We just banished someone, boss. I hope they have a better life than me.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_ColonistBanishedToDie</defName>
+    <thoughtClass>Thought_Banished</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>5</stackLimit>
+    <showBubble>true</showBubble>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>colonist banished to death</label>
+        <description>We banished someone in such a way that there's almost no way they'll survive, boss.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_PrisonerBanishedToDie</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>5</stackLimit>
+    <showBubble>true</showBubble>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>prisoner banished to death</label>
+        <description>We banished a prisoner in such a way that there's almost no way they'll survive, boss.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_BondedAnimalBanished</defName>
+    <thoughtClass>Thought_Banished</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>5</stackLimit>
+    <showBubble>true</showBubble>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>bonded animal {0} banished</label>
+        <description>Boss! My bonded animal was banished!</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Rescue quest -->
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_FailedToRescueRelative</defName>
+    <durationDays>30</durationDays>
+    <stackLimit>5</stackLimit>
+  <showBubble>true</showBubble>
+    <stages>
+      <li>
+        <label>failed to rescue {0}</label>
+        <description>We had a chance to rescue my relative, and failed. I could have helped, boss, I could have helped.</description>
+        <baseMoodEffect>-18</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_RescuedRelative</defName>
+    <durationDays>30</durationDays>
+    <stackLimit>5</stackLimit>
+  <showBubble>true</showBubble>
+    <stages>
+      <li>
+        <label>rescued {0}</label>
+        <description>We rescued one of my relatives. Finally, boss, I have failed so many.</description>
+        <baseMoodEffect>18</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FCP_Raul_The_Ghoul_Rescued</defName>
+    <durationDays>30</durationDays>
+    <stackLimit>5</stackLimit>
+  <showBubble>true</showBubble>
+    <stages>
+      <li>
+        <label>rescued</label>
+        <description>You saved me, I guess I sort of owe you my life, boss.</description>
+        <baseMoodEffect>18</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>
+

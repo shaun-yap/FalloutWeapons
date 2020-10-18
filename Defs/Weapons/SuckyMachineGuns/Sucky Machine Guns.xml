@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!-- ================================= 9mm SMG ==================================== -->
+  <ThingDef ParentName="BaseFalloutHumanMakeableGun">
+    <defName>FCP_SMG_9mmSGM</defName>
+    <label>9mm SMG</label>
+    <description>The 9mm submachine gun is a small, yet capable weapon, able to empty a full magazine in under 3 seconds.</description>
+    <graphicData>
+      <texPath>Things/SMGs/9mmSMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>9mmSMGInteract</soundInteract>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>   
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>7000</WorkToMake>
+      <Mass>1.8</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.775</AccuracyShort>
+      <AccuracyMedium>0.475</AccuracyMedium>
+      <AccuracyLong>0.325</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>  
+	<weaponTags>
+	  <li>Wastelander</li>
+      <li>SMG</li>
+	  <li>9mmSMG</li>
+    </weaponTags>
+    <costList>
+      <Steel>45</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_9mmSMG</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>8</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot9mmSMG</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_9mmSMG</defName>
+    <label>9mm bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  
+   <!-- ================================= Silenced 22SMG SMG ==================================== -->
+  <ThingDef ParentName="BaseFalloutHumanMakeableGun">
+    <defName>FCP_SMG_Silenced22SMG</defName>
+    <label>Silenced .22 SMG</label>
+    <description>The silenced .22 SMG is a distinctive weapon with its unusual pan magazine, which sits atop the gun rather than under. The silencer is integrated into the barrel with no modifications required.</description>
+    <graphicData>
+      <texPath>Things/SMGs/Silenced22SMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Silenced22SMGInteract</soundInteract>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>   
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3.6</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases> 
+	<weaponTags>
+	  <li>Wastelander</li>
+      <li>Silenced</li>
+      <li>SMG</li>
+	  <li>Silenced22SMG</li>
+    </weaponTags>
+    <costList>
+      <Steel>30</Steel>
+	  <WoodLog>30</WoodLog>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Silenced22SMG</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>8</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>ShotSilenced22SMG</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Silenced22SMG</defName>
+    <label>.22LR round</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  
+   <!-- ================================= 45Auto SMG ==================================== -->
+  <!--ThingDef ParentName="BaseFalloutHumanMakeableGun">
+    <defName>SMG_45AutoSGM</defName>
+    <label>.45 Auto SMG</label>
+    <description>The .45 Auto submachine gun (SMG) is an old two-handed automatic weapon that was stored in U.S. Army and National Guard armories at the time of the war.</description>
+    <graphicData>
+      <texPath>Things/SMGs/45AutoSMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>17500</WorkToMake>
+      <Mass>5</Mass>
+      <AccuracyTouch>0.825</AccuracyTouch>
+      <AccuracyShort>0.575</AccuracyShort>
+      <AccuracyMedium>0.275</AccuracyMedium>
+      <AccuracyLong>0.125</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+	  <WoodLog>20</WoodLog>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_45AutoSMG</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>19.9</range>
+        <burstShotCount>8</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_MachinePistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_45AutoSMG</defName>
+    <label>.45 round</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef-->
+
+
+
+</Defs>

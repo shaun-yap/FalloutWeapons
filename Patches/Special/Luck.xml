@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="FoodPoisonChance"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="FoodPoisonChance"]</xpath>
+					<value>
+						<parts>
+							<li Class="Special.StatPart_Luck" />
+						</parts>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="FoodPoisonChance"]/parts</xpath>
+					<value>
+						<li Class="Special.StatPart_Luck" />
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="MeleeDodgeChance"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="MeleeDodgeChance"]</xpath>
+					<value>
+						<parts>
+							<li Class="Special.StatPart_Luck"> 
+								<weight>0.5</weight>
+							</li>
+						</parts>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="MeleeDodgeChance"]/parts</xpath>
+					<value>
+						<li Class="Special.StatPart_Luck"> 
+							<weight>0.5</weight>
+						</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

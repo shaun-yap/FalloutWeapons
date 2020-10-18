@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="FCPNCRBaseGhoul" Abstract="True">
+    <race>Ghoul</race>
+    <defaultFactionType>FCPNCRFaction</defaultFactionType>
+    <chemicalAddictionChance>0.0</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <invNutrition>2.55</invNutrition>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <biocodeWeaponChance>0.0</biocodeWeaponChance>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+  
+  <!--Priiii-->
+  <PawnKindDef ParentName="FCPNCRBaseGhoul">
+    <defName>FCP_NCR_Private_Ghoul</defName>
+    <label>private</label>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <combatPower>35</combatPower>
+    <invNutrition>0</invNutrition>
+    <gearHealthRange>0.2~0.6</gearHealthRange>
+    <itemQuality>Poor</itemQuality>
+    <apparelMoney>1000~1500</apparelMoney>
+    <apparelAllowHeadgearChance>0.85</apparelAllowHeadgearChance>
+    <apparelTags>
+		<li>NCRFatigues</li>
+		<li>NCRBandoleerArmor</li>	
+		<li>NCRTrooper</li>	
+		<li>NCRHat</li>	
+		<li>BrahminSkinOutfit</li>
+    </apparelTags>
+    <weaponMoney>132~212</weaponMoney>
+    <weaponTags>
+		<li>9mmPistol</li>
+		<li>10mmPistol</li>  
+		<li>357MagnumRevolver</li>
+		<li>LeverActionShotgun</li>
+		<li>9mmSMG</li>	
+		<!--li>10mmSMG</li-->
+    </weaponTags>
+    <techHediffsMoney>0</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>30~70</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1~1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="FCPNCRBaseGhoul">
+    <defName>FCP_NCR_Lieutenant_Ghoul</defName>
+    <label>Lieutenant</label>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<combatPower>40</combatPower>
+    <backstoryCryptosleepCommonality>0.00</backstoryCryptosleepCommonality>
+    <itemQuality>Normal</itemQuality>
+    <invNutrition>3</invNutrition>
+    <gearHealthRange>0.2~0.6</gearHealthRange>
+    <apparelMoney>1000~1500</apparelMoney>
+    <apparelAllowHeadgearChance>0.85</apparelAllowHeadgearChance>
+    <apparelTags>
+		<li>NCRFatigues</li>
+		<li>NCRBandoleerArmor</li>	
+		<li>NCRTrooper</li>
+		<li>NCRHat</li>	
+		<li>BrahminSkinOutfit</li>
+    </apparelTags>
+    <weaponMoney>132~150</weaponMoney>
+    <weaponTags>
+      <li>9mmPistol</li>
+      <li>10mmPistol</li>  
+	  <li>357MagnumRevolver</li>
+    </weaponTags>
+    <techHediffsMoney>0</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>25~50</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1~1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  
+    <!--FCP_Corporal-->
+    <PawnKindDef ParentName="FCPNCRBaseGhoul">
+    <defName>FCP_NCR_Corporal_Ghoul</defName>
+    <label>Corporal</label> 
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<combatPower>45</combatPower>
+    <apparelMoney>5000~6000</apparelMoney>
+    <apparelTags>
+		<li>NCRMantleArmor</li>
+		<li>NCRBandoleerArmor</li>	
+		<li>NCRTrooper</li>	
+		<li>NCRHat</li>
+		<li>BrahminSkinOutfit</li>
+    </apparelTags>
+    <weaponMoney>9999</weaponMoney>
+    <weaponTags>
+      <li>ServiceRifle</li>
+    </weaponTags>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~8</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+  </PawnKindDef>
+  
+    <!--FCP_SGT-->
+    <PawnKindDef ParentName="FCPNCRBaseGhoul">
+    <defName>FCP_NCR_Sergeant_Ghoul</defName>
+    <label>Sergeant</label>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<combatPower>65</combatPower>
+    <apparelMoney>5000~6000</apparelMoney>
+    <apparelTags>
+		<li>NCRMantleArmor</li>
+		<li>NCRBandoleerArmor</li>	
+		<li>NCRHat</li>	
+		<li>BrahminSkinOutfit</li>
+    </apparelTags>
+    <weaponMoney>9999</weaponMoney>
+    <weaponTags>
+      <li>HuntingRifle</li>     
+	  <li>ServiceRifle</li>  
+	  <li>VarmintRifle</li>  
+	  <li>MarksmanCarbine</li>  
+    </weaponTags>	
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~10</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+  </PawnKindDef>
+  
+      <!--Major-->
+    <PawnKindDef ParentName="FCPNCRBaseGhoul">
+    <defName>FCP_NCR_Major_Ghoul</defName>
+    <label>Major</label>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<combatPower>90</combatPower>
+    <apparelMoney>5000~6000</apparelMoney>
+    <apparelTags>
+		<li>NCRMantleArmor</li>
+		<li>NCRGreenBeret</li>	
+		<li>BrahminSkinOutfit</li>
+    </apparelTags>
+    <weaponMoney>9999</weaponMoney>
+    <weaponTags>
+      <li>HuntingRifle</li>     
+	  <li>ServiceRifle</li>  
+	  <li>VarmintRifle</li>  
+	  <li>MarksmanCarbine</li>  
+    </weaponTags>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~10</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+  </PawnKindDef>
+
+      <!--Recon Sniper-->
+    <PawnKindDef ParentName="FCPNCRBaseGhoul">
+    <defName>FCP_NCR_Recon_Sniper_Ghoul</defName>
+    <label>1st Recon Sniper</label>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<combatPower>110</combatPower>
+    <apparelMoney>5000~6000</apparelMoney>
+    <apparelTags>
+		<li>ReconSniper</li>
+    </apparelTags>
+    <weaponMoney>9999</weaponMoney>
+    <weaponTags>
+      <li>SniperRifle</li>     
+    </weaponTags>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>10~15</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+  </PawnKindDef>
+
+      <!--Heavy Trooper-->
+    <PawnKindDef ParentName="FCPNCRBaseGhoul">
+    <defName>FCP_NCR_HeavyTrooper_Ghoul</defName>
+    <label>heavy trooper</label>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<combatPower>150</combatPower>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelMoney>5000~6000</apparelMoney>
+    <apparelTags>
+	<li>BrahminSkinOutfit</li>
+	<li>NCRSalvagedPA</li>
+    </apparelTags>
+    <weaponMoney>9999</weaponMoney>
+    <weaponTags>
+      <li>FCPMinigun</li>     
+      <li>HeavyIncinerator</li>     
+    </weaponTags>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>10~15</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>  
+	  <li>Wimp</li>
+      <li>Nudist</li>
+    </disallowedTraits>
+  </PawnKindDef>
+  
+  
+        <!--Ranger-->
+    <PawnKindDef ParentName="FCPNCRBaseGhoul">
+    <defName>FCP_NCR_Ranger_Ghoul</defName>
+    <label>ranger</label>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<race>GhoulTough</race>
+	<combatPower>150</combatPower>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelMoney>5000~6000</apparelMoney>
+    <apparelTags>
+	<li>BrahminSkinOutfit</li>
+	<li>NCRPatrolArmor</li>
+    </apparelTags>
+    <weaponMoney>9999</weaponMoney>
+    <weaponTags>
+      <li>HuntingRifle</li>  
+ 	  <li>AssaultCarbine</li>  
+	  <li>ServiceRifle</li>  
+	  <li>AntiMaterialRifle</li>	
+	  <li>BrushGun</li>  
+	  <li>RangerSequoia</li>  
+    </weaponTags>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>12~15</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>  
+	  <li>Wimp</li>
+      <li>Nudist</li>
+    </disallowedTraits>
+  </PawnKindDef>
+  
+        <!--Veteran Ranger-->
+    <PawnKindDef ParentName="FCPNCRBaseGhoul">
+    <defName>FCP_NCR_Veteran_Ranger_Ghoul</defName>
+	<race>GhoulTough</race>
+    <label>veteran ranger</label>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<combatPower>150</combatPower>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelMoney>5000~6000</apparelMoney>
+    <apparelTags>
+	<li>BrahminSkinOutfit</li>
+	<li>NCRRangerCombatArmor</li>
+    </apparelTags>
+    <weaponMoney>9999</weaponMoney>
+    <weaponTags>
+ 	  <li>AssaultCarbine</li>  
+	  <li>AntiMaterialRifle</li>
+	  <li>BrushGun</li>  
+	  <li>RangerSequoia</li>  
+    </weaponTags>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>12~17</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>  
+	  <li>Wimp</li>
+      <li>Nudist</li>
+    </disallowedTraits>
+  </PawnKindDef>
+  
+</Defs>

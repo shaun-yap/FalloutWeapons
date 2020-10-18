@@ -1,0 +1,1097 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<ThingDef ParentName="ApparelMakeableBase">
+	<defName>FCPApparel_MilitiaOutfit</defName>
+	<label>Militia Outfit</label>
+	<description>The Militia outfit is a simple outfit worn by those called to defend their homes.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Wastelandclothing/MilitiaOutfit</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.05</generateCommonality>
+	<recipeMaker>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Cloth>30</Cloth>
+	</costList>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+	<statBases>
+		<Flammability>1</Flammability>
+		<Mass>1</Mass>
+		 
+		<WorkToMake>4300</WorkToMake>
+		<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.6</ArmorRating_Heat>
+		<Insulation_Cold>5</Insulation_Cold>
+		<Insulation_Heat>15</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+		<SocialImpact>0.05</SocialImpact>
+		<NegotiationAbility>0.05</NegotiationAbility>
+	</equippedStatOffsets>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Wastelandclothing/MilitiaOutfit</wornGraphicPath>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<tags>
+			<li>WastelanderBasic</li>
+			<li>IndustrialBasic</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	
+</ThingDef>
+
+<ThingDef ParentName="ApparelMakeableBase">
+	<defName>FCPApparel_AthleticOutfit</defName>
+	<label>Athletic Outfit</label>
+	<description>A simple outfit.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Wastelandclothing/AthleticOutfit</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.05</generateCommonality>
+	<recipeMaker>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Cloth>30</Cloth>
+	</costList>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+	<statBases>
+		<Flammability>1</Flammability>
+		<Mass>1</Mass>
+		 
+		<WorkToMake>4300</WorkToMake>
+		<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.6</ArmorRating_Heat>
+		<Insulation_Cold>5</Insulation_Cold>
+		<Insulation_Heat>10</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+		<SocialImpact>0.05</SocialImpact>
+		<MeleeDodgeChance>0.10</MeleeDodgeChance>
+		<MoveSpeed>0.05</MoveSpeed>
+	</equippedStatOffsets>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Wastelandclothing/AthleticOutfit</wornGraphicPath>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<tags>
+			<li>WastelanderBasic</li>
+			<li>IndustrialBasic</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	
+</ThingDef>
+
+<ThingDef ParentName="ApparelMakeableBase">
+	<defName>FCPApparel_SurveyorOutfit</defName>
+	<label>Surveyor Outfit</label>
+	<description>The Surveyor outfit is a pocketed leather coat with brown cargo pants and dirty wingtip shoes.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Wastelandclothing/SurveyorOutfit</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.05</generateCommonality>
+	<recipeMaker>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Cloth>30</Cloth>
+	</costList>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+	<statBases>
+		<Flammability>1</Flammability>
+		<Mass>1</Mass>
+		 
+		<WorkToMake>4300</WorkToMake>
+		<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.6</ArmorRating_Heat>
+		<Insulation_Cold>5</Insulation_Cold>
+		<Insulation_Heat>15</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+			<SocialImpact>0.02</SocialImpact>
+			<PlantWorkSpeed>0.10</PlantWorkSpeed>
+			<PlantHarvestYield>0.10</PlantHarvestYield>
+			<AnimalGatherSpeed>0.10</AnimalGatherSpeed>
+			<AnimalGatherYield>0.10</AnimalGatherYield>
+			<CarryingCapacity>15</CarryingCapacity>
+	</equippedStatOffsets>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Wastelandclothing/SurveyorOutfit</wornGraphicPath>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<tags>
+			<li>WastelanderBasic</li>
+			<li>IndustrialBasic</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	
+</ThingDef>
+
+
+ <ThingDef ParentName="ApparelMakeableBase">
+	<defName>FCPApparel_CaravaneerOutfit</defName>
+	<label>Caravaneer Outfit</label>
+	<description>It is worn by caravaneers and travelers. The male version consists of a dark brown shirt.The female version is a cream colored floral-print dress with a white apron and beige cardigan.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Wastelandclothing/CaravaneerOutfit</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.05</generateCommonality>
+	<recipeMaker>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Cloth>30</Cloth>
+	</costList>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+	<statBases>
+		<Flammability>1</Flammability>
+		<Mass>1</Mass>
+		 
+		<WorkToMake>3200</WorkToMake>
+		<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.6</ArmorRating_Heat>
+		<Insulation_Cold>5</Insulation_Cold>
+		<Insulation_Heat>15</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+		<SocialImpact>0.05</SocialImpact>
+		<NegotiationAbility>0.05</NegotiationAbility>
+		<TradePriceImprovement>0.05</TradePriceImprovement>
+	</equippedStatOffsets>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Wastelandclothing/CaravaneerOutfit</wornGraphicPath>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<tags>
+			<li>WastelanderBasic</li>
+			<li>IndustrialBasic</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	
+	</ThingDef>
+	
+	<ThingDef ParentName="ApparelMakeableBase">
+	<defName>FCPApparel_FieldHandOutfit</defName>
+	<label>Caravaneer Outfit</label>
+	<description>It is worn by farmers and travelers.For males, the outfit consists of a blue long-sleeve shirt with suspenders, brown rolled-up pants complete with a red scarf and black gloves. The female outfit consists of a red dress worn with a white apron.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Wastelandclothing/FieldHandOutfit</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.05</generateCommonality>
+	<recipeMaker>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Cloth>30</Cloth>
+	</costList>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+	<statBases>
+		<Flammability>1</Flammability>
+		<Mass>1</Mass>
+		 
+		<WorkToMake>4300</WorkToMake>
+		<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.6</ArmorRating_Heat>
+		<Insulation_Cold>5</Insulation_Cold>
+		<Insulation_Heat>15</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+			<SocialImpact>0.02</SocialImpact>
+			<PlantWorkSpeed>0.10</PlantWorkSpeed>
+			<PlantHarvestYield>0.10</PlantHarvestYield>
+			<AnimalGatherSpeed>0.10</AnimalGatherSpeed>
+			<AnimalGatherYield>0.10</AnimalGatherYield>
+	</equippedStatOffsets>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Wastelandclothing/FieldHandOutfit</wornGraphicPath>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<tags>
+			<li>WastelanderBasic</li>
+			<li>IndustrialBasic</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	
+</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+	<defName>FCPApparel_ProspectorOutfit</defName>
+	<label>Prospector Outfit</label>
+	<description>It is worn by prospectors searching for anything to trade out in the wasteland. The male outfit consists of denim overalls and a tan long sleeve shirt underneath. The female outfit consists of a tan button dress with a belt.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Wastelandclothing/ProspectorOutfit</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.05</generateCommonality>
+	<recipeMaker>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Cloth>30</Cloth>
+	</costList>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+	<statBases>
+		<Flammability>1</Flammability>
+		<Mass>1</Mass>
+		 
+		<WorkToMake>4300</WorkToMake>
+		<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.6</ArmorRating_Heat>
+		<Insulation_Cold>5</Insulation_Cold>
+		<Insulation_Heat>15</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+			<SocialImpact>0.02</SocialImpact>
+			<WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+			<CarryingCapacity>15</CarryingCapacity>
+	</equippedStatOffsets>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Wastelandclothing/ProspectorOutfit</wornGraphicPath>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<tags>
+			<li>WastelanderBasic</li>
+			<li>IndustrialBasic</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	
+</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+	<defName>FCPApparel_SettlerOutfit</defName>
+	<label>Settler Outfit</label>
+	<description>It is worn by settlers trying to make a living out in the wasteland. For males it is a white shirt with jean overalls. A handkerchief is wrapped around the neck. For females, it is an earth tone dress that comes down to the mid calves with a gray scarf wrapped around the neck.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Wastelandclothing/SettlerOutfit</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.10</generateCommonality>
+	<recipeMaker>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Cloth>30</Cloth>
+	</costList>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+	<statBases>
+		<Flammability>1</Flammability>
+		<Mass>1</Mass>
+		<WorkToMake>3200</WorkToMake>
+		<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.6</ArmorRating_Heat>
+		<Insulation_Cold>5</Insulation_Cold>
+		<Insulation_Heat>15</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+			<SocialImpact>0.02</SocialImpact>
+			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+			<CarryingCapacity>8</CarryingCapacity>
+	</equippedStatOffsets>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Wastelandclothing/SettlerOutfit</wornGraphicPath>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<tags>
+			<li>WastelanderBasic</li>
+			<li>IndustrialBasic</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	
+</ThingDef>
+
+
+	<ThingDef ParentName="ApparelMakeableBase">
+	<defName>FCPApparel_WastelandWandererOutfit</defName>
+	<label>Wasteland Wanderer Outfit</label>
+	<description>Most wastelanders will wear this outfit. It consists of a tan zipped-up hoodie and cargo pants tucked into riding boots. It is very common to find.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Wastelandclothing/WastelandWandererOutfit</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.15</generateCommonality>
+	<recipeMaker>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Cloth>30</Cloth>
+	</costList>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+	<statBases>
+		<Flammability>1</Flammability>
+		<Mass>1</Mass>
+		<WorkToMake>4300</WorkToMake>
+		<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.6</ArmorRating_Heat>
+		<Insulation_Cold>5</Insulation_Cold>
+		<Insulation_Heat>15</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+			<SocialImpact>0.02</SocialImpact>
+			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+			<CarryingCapacity>8</CarryingCapacity>
+	</equippedStatOffsets>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Wastelandclothing/WastelandWandererOutfit</wornGraphicPath>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<tags>
+			<li>WastelanderBasic</li>
+			<li>IndustrialBasic</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	
+</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+	<defName>FCPApparel_MercAdventurerOutfit</defName>
+	<label>Merc AdventurerOutfit</label>
+	<description>A tough leather jacket.For males, it's a red sweater and a leather vest with many pockets, along with several watches some brown pants and a necklace with three teeth on it make up this suit of clothing. For females, it's a bare midriff red/black top, similar pants and boots with spurs.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Wastelandclothing/MercAdventurerOutfit</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.05</generateCommonality>
+	<recipeMaker>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costStuffCount>30</costStuffCount>
+	<stuffCategories>
+		<li>Leathery</li>
+	</stuffCategories>
+	<costList>
+		<Cloth>30</Cloth>
+	</costList>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+	<statBases>
+		<Flammability>1</Flammability>
+		<Mass>1</Mass>
+		<WorkToMake>13200</WorkToMake>
+		<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.6</ArmorRating_Heat>
+		<Insulation_Cold>15</Insulation_Cold>
+		<Insulation_Heat>10</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+			<SocialImpact>0.02</SocialImpact>
+			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+			<CarryingCapacity>8</CarryingCapacity>
+	</equippedStatOffsets>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Wastelandclothing/MercAdventurerOutfit</wornGraphicPath>
+		<layers>
+			<li>OnSkin</li>
+			<li>Shell</li>
+		</layers>
+		<tags>
+			<li>WastelanderBasic</li>
+			<li>IndustrialBasic</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	
+</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+	<defName>FCPApparel_WastelandDoctorOutfit</defName>
+	<label>Wasteland Wanderer Outfit</label>
+	<description>The wasteland doctor outfit consist of a white t-shirt for males; white tank top for females, brown cargo pants with pouches attached to the belt, and boots.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Wastelandclothing/WastelandDoctorOutfit</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.05</generateCommonality>
+	<recipeMaker>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Cloth>50</Cloth>
+	</costList>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+	<statBases>
+		<Flammability>1</Flammability>
+		<Mass>1</Mass>
+		<WorkToMake>4300</WorkToMake>
+		<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.6</ArmorRating_Heat>
+		<Insulation_Cold>5</Insulation_Cold>
+		<Insulation_Heat>15</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+			<SocialImpact>0.02</SocialImpact>
+			<CarryingCapacity>5</CarryingCapacity>
+			<MedicalSurgerySuccessChance>0.10</MedicalSurgerySuccessChance>
+			<MedicalOperationSpeed>0.10</MedicalOperationSpeed>
+			<MedicalTendQuality>0.10</MedicalTendQuality>
+			<MedicalTendSpeed>0.05</MedicalTendSpeed>
+	</equippedStatOffsets>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Wastelandclothing/WastelandDoctorOutfit</wornGraphicPath>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<tags>
+			<li>WastelanderDoctor</li>
+			<li>IndustrialAdvanced</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	
+</ThingDef>
+	
+	<ThingDef ParentName="ApparelMakeableBase">
+	<defName>FCPApparel_BrahminSkinOutfit</defName>
+	<label>Brahmin Skin Outfit</label>
+	<description>A basic outfit consisting of a white shirt and patched overalls with suspenders complete with boots. The female version of this outfit has a rolled-up long-sleeve shirt and pants.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Wastelandclothing/BrahminSkinOutfit</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.10</generateCommonality>
+	<recipeMaker>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Cloth>30</Cloth>
+	</costList>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+	<statBases>
+		<Flammability>1</Flammability>
+		<Mass>1</Mass>
+		<WorkToMake>3200</WorkToMake>
+		<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.6</ArmorRating_Heat>
+		<Insulation_Cold>5</Insulation_Cold>
+		<Insulation_Heat>15</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+		<SocialImpact>0.01</SocialImpact>
+	</equippedStatOffsets>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Wastelandclothing/BrahminSkinOutfit</wornGraphicPath>
+		<layers>
+			<li>OnSkin</li>
+		</layers>
+		<tags>
+			<li>WastelanderBasic</li>
+			<li>IndustrialBasic</li>
+			<li>BrahminSkinOutfit</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	
+</ThingDef>
+	
+
+
+
+
+------------------------------------------------------------------------- Shell-------------------------------------------------------------------------------
+
+<ThingDef ParentName="ApparelMakeableBase">
+	<defName>FCPApparel_LeatherCoat</defName>
+	<label>Leather Coat</label>
+	<description>The leather coat consists of a long, ankle length coat, presumably made from leather, and gloves and boots which appear to be made from duct tape. It has a belt which looks to be made from the seat belt of an airplane.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Wastelandclothing/LeatherCoat</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.01</generateCommonality>
+    <costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+	<statBases>
+		<Flammability>0.2</Flammability>
+		<Mass>1</Mass>
+		 
+		<WorkToMake>10000</WorkToMake>
+		<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.3</ArmorRating_Heat>
+		<Insulation_Cold>25</Insulation_Cold>
+		<Insulation_Heat>10</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+		<TradePriceImprovement>0.10</TradePriceImprovement>
+		<CarryingCapacity>10</CarryingCapacity>
+	</equippedStatOffsets>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Wastelandclothing/LeatherCoat</wornGraphicPath>
+		<layers>
+			<li>Shell</li>
+		</layers>
+		<tags>
+			<li>Wastelander</li>
+			<li>IndustrialBasic</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+</ThingDef>
+
+
+<ThingDef ParentName="ApparelMakeableBase">
+	<defName>FCPApparel_MercCruiserOutfit</defName>
+	<label>Merc Cruiser Outfit</label>
+	<description>A long cloth jacket with a white t-shirt underneath, as well as some black pants make up this outfit.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Wastelandclothing/MercCruiserOutfit</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.15</generateCommonality>
+	<costList>
+		<Cloth>160</Cloth>
+	</costList>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+	<statBases>
+		<Flammability>0.2</Flammability>
+		<Mass>1</Mass>
+		 
+		<WorkToMake>13200</WorkToMake>
+		<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.3</ArmorRating_Heat>
+		<Insulation_Cold>25</Insulation_Cold>
+		<Insulation_Heat>10</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+		<TradePriceImprovement>0.10</TradePriceImprovement>
+		<SocialImpact>0.10</SocialImpact>
+		<CarryingCapacity>10</CarryingCapacity>
+	</equippedStatOffsets>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Wastelandclothing/MercCruiserOutfit</wornGraphicPath>
+		<layers>
+			<li>OnSkin</li>
+			<li>Shell</li>
+		</layers>
+		<tags>
+			<li>Mercenary</li>
+			<li>WastelanderAdvanced</li>
+			<li>IndustrialAdvanced</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+</ThingDef>
+
+-------------------------------------------------------------------------------------------Hats--------------------------------------------------------------------
+ 
+      <ThingDef ParentName="HatMakeableBase">
+		<defName>FCPHeadgear_MilitiaHat</defName>
+		<label>Militia Hat</label>
+		<description>A fashionable hat designed to protect the wearer from light weather.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Wastelandclothing/MilitiaHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>0.05</generateCommonality>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			 
+			<WorkToMake>1500</WorkToMake>
+			<Mass>0.14</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>Headgear</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+                <li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Wastelandclothing/MilitiaHat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>IndustrialAdvanced</li>
+				<li>Wastelander</li>
+			</tags>
+			<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+            </defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+	
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>FCPHeadgear_StormChaserHat</defName>
+		<label>Storm Chaser Hat</label>
+		<description>A fedora hat combined with a hood designed to protect the wearer from light weather.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Wastelandclothing/StormChaserHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>0.05</generateCommonality>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			 
+			<WorkToMake>1500</WorkToMake>
+			<Mass>0.14</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+			<ToxicSensitivity>-0.20</ToxicSensitivity>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>Headgear</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+                <li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Wastelandclothing/StormChaserHat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>IndustrialAdvanced</li>
+				<li>Wastelander</li>
+			</tags>
+			<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+            </defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+	
+   <ThingDef ParentName="HatMakeableBase">
+		<defName>FCPHeadgear_Bandana</defName>
+		<label>Bandana</label>
+		<description>A short piece of cloth to help shield the wearer from the harsh wasteland.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Wastelandclothing/Bandana</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>0.005</generateCommonality>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			 
+			<WorkToMake>1200</WorkToMake>
+			<Mass>0.12</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>Headgear</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Teeth</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Wastelandclothing/Bandana</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Wastelander</li>
+				<li>IndustrialBasic</li>
+			</tags>
+			<defaultOutfitTags>
+			<li>Worker</li>
+			<li>Soldier</li>
+            </defaultOutfitTags>
+		</apparel>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.10</ToxicSensitivity>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+    </ThingDef>
+
+------------------------------------------------------------------------------------Radiation Gear--------------------------------------------------------
+
+ <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>FCPHeadgear_RadiationHelmet</defName>
+    <label>Radiation helmet</label>
+    <description>The radiation helmet is specially designed to stop radiation. It covers the entire head keeping you safe from toxic radiation.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Wastelandclothing/RadiationHelmet</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.01</generateCommonality>
+	<costList>
+		<Cloth>100</Cloth>
+		<ComponentIndustrial>2</ComponentIndustrial>
+	</costList>
+	<statBases>
+		<Flammability>0.2</Flammability>
+		<Mass>1</Mass>
+		<MarketValue>600</MarketValue>
+		<WorkToMake>3500</WorkToMake>
+		<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.3</ArmorRating_Heat>
+		<Insulation_Cold>25</Insulation_Cold>
+		<Insulation_Heat>25</Insulation_Heat>
+	</statBases>
+		<thingCategories Inherit="False">
+			<li>Headgear</li>
+		</thingCategories>
+	<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Wastelandclothing/RadiationHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+		<tags>
+			<li>Radiation</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+		</defaultOutfitTags>
+	</apparel>
+			<equippedStatOffsets>
+				<ToxicSensitivity>-0.80</ToxicSensitivity>
+			</equippedStatOffsets>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="ApparelMakeableBase">
+	<defName>FCPApparel_RadiationSuit</defName>
+	<label>Radiation Suit</label>
+	<description>The radiation suit is a suit specially designed to stop radiation. It covers the entire body.</description>
+	<graphicData>
+		<texPath>Things/Apparel/Wastelandclothing/RadiationSuit</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.01</generateCommonality>
+	<costList>
+	  <Cloth>200</Cloth>
+      <ComponentIndustrial>3</ComponentIndustrial>
+	</costList>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+	<statBases>
+		<Flammability>0.2</Flammability>
+		<Mass>1</Mass>
+		<MarketValue>1200</MarketValue>
+		<WorkToMake>3500</WorkToMake>
+		<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.3</ArmorRating_Heat>
+		<Insulation_Cold>25</Insulation_Cold>
+		<Insulation_Heat>20</Insulation_Heat>
+	</statBases>
+	<equippedStatOffsets>
+		<TradePriceImprovement>-0.10</TradePriceImprovement>
+		<SocialImpact>-0.10</SocialImpact>
+		<ToxicSensitivity>-0.40</ToxicSensitivity>
+	</equippedStatOffsets>
+	<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Wastelandclothing/RadiationSuit</wornGraphicPath>
+		<layers>
+			<li>OnSkin</li>
+			<li>Shell</li>
+		</layers>
+		<tags>
+			<li>Radiation</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+		</defaultOutfitTags>
+	</apparel>
+	
+	</ThingDef>
+	
+</Defs>

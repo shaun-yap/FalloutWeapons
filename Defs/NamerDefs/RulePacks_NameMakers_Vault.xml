@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerVaultBase</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[VaultBase] [VaultNoun]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>VaultBase</keyword>
+          <path>Things/VaultBase</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>VaultNoun</keyword>
+          <path>Things/VaultNoun</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerVaultFaction</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[VaultFaction] [VaultCode]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>VaultFaction</keyword>
+          <path>Things/VaultFaction</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>VaultCode</keyword>
+          <path>Things/VaultCode</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+</Defs>
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[defName="ToxicBuildup"]/stages/li/hediffGivers</xpath>
+    <value>
+          <li Class="FalloutCore.HediffGiver_RandomWithChance">
+            <hediff>FC_GhoulMutation</hediff>
+            <mtbDays>0</mtbDays>
+			<chance>0.5</chance>
+            <partsToAffect>
+              <li>Brain</li>
+            </partsToAffect>
+          </li>    </value>
+  </Operation>
+</Patch>

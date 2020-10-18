@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<Quests.DialogDef>
+		<defName>EscortMayorDialog</defName>
+		<title>Escort</title>
+		<text>Mayor turns to you and says hello</text>
+		<options>
+			<li>
+				<text>Hello</text>
+				<actions>
+					<li Class="Quests.Action_GoToNextDialog">
+						<nextDialog>EscortMayorDialogTwo</nextDialog>
+					</li>
+				</actions>
+			</li>
+			<li>
+				<text>Bye</text>
+				<actions>
+					<li Class="Quests.Action_EndDialog"/>
+				</actions>
+			</li>
+			<li>
+				<text>I want to exchange things</text>
+				<actions>
+					<li Class="Quests.Action_StartTrade">
+						<questDef>OpportunitySite_DownedRefugee</questDef>
+					</li>
+					<li Class="Quests.Action_EndDialog"/>
+				</actions>
+			</li>
+		</options>
+	</Quests.DialogDef>
+
+	<Quests.DialogDef>
+		<defName>EscortMayorDialogTwo</defName>
+		<text>Hi, you have a solid reputation. Do you want to escort me to another city for a good reward?</text>
+		<options>
+			<li>
+				<text>I agree, I accept it</text>
+				<actions>
+					<li Class="Quests.Action_TakeQuest">
+						<questDef>OpportunitySite_DownedRefugee</questDef>
+					</li>
+					<li Class="Quests.Action_EndDialog"/>
+				</actions>
+			</li>
+			<li>
+				<text>I'm not interested, bye</text>
+				<actions>
+					<li Class="Quests.Action_EndDialog">
+					</li>
+				</actions>
+			</li>
+			<li>
+				<text>Shove your proposal up your ass, I have no intention of pleading with pathetic people like you</text>
+				<actions>
+					<li Class="Quests.Action_StartFight"/>
+					<li Class="Quests.Action_AffectRelationship">
+						<affectGoodwill>-20</affectGoodwill>
+					</li>
+					<li Class="Quests.Action_EndDialog"/>
+				</actions>
+			</li>
+		</options>
+	</Quests.DialogDef>
+
+</Defs>

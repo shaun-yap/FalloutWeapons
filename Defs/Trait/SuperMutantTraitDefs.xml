@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HediffDef>
+    <defName>SuperMutantToughness</defName>
+    <label>Super Mutant Toughness</label>      
+	<labelNoun>[PAWN_nameDef] has super mutant toughness</labelNoun>
+	<description>Super mutants can withstand more pain than normal humans.</description>
+    <stages>
+			<li>  
+			<minSeverity>0</minSeverity>
+				<painFactor>0.4</painFactor>    
+		    </li>	
+    </stages>
+  </HediffDef>
+  
+    <HediffDef>
+    <defName>SuperMutantCoagulation</defName>
+    <label>Super Mutant Coagulation</label>      
+	<labelNoun>[PAWN_nameDef] seems to bleed slower than normal beings.</labelNoun>
+	<description>Super mutants have thick skin and it takes more to make them bleed.</description>
+    <stages>
+			<li>
+				<totalBleedFactor>0.5</totalBleedFactor>
+			</li>
+    </stages>
+  </HediffDef>
+  
+      <HediffDef>
+    <defName>SuperMutantRegeneration</defName>
+    <label>Super Mutant Regeneration</label>      
+	<labelNoun>[PAWN_nameDef] has super mutant regeneration.</labelNoun>
+	<description>Super mutants cells divide much faster than regular humans and heal much quicker from combat..</description>
+    <stages>
+			<li>
+				<naturalHealingFactor>3.5</naturalHealingFactor>
+			</li>
+    </stages>
+  </HediffDef>
+  
+        <HediffDef>
+    <defName>RadiationProof</defName>
+    <label>You should not see this</label>      
+	<labelNoun>If you see this please report it.</labelNoun>
+	<description>This prevents a race from being able to go to the FEV Vat,</description>
+    <stages>
+			<li>      
+			<becomeVisible>false</becomeVisible>
+			</li>
+    </stages>
+  </HediffDef>
+</Defs>
+

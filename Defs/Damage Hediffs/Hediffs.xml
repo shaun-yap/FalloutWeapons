@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <defName>PowerArmorOverload</defName>
+    <label>power armor overload</label>
+    <labelNoun>a power amor overload</labelNoun>
+    <description>After-effects of an electrical shock to someone wielding power armor.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2500~3500</disappearsAfterTicks>
+      </li>
+    </comps> 
+    <stages>   
+      <li>     
+	  <label>power armor overload</label>
+	  <painOffset>0.1</painOffset>
+	  <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <postFactor>0.8</postFactor>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.8</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.8</postFactor>
+          </li>  
+
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  
+    <HediffDef>   
+	<hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+    <isBad>false</isBad>
+    <defName>FCPPowerArmorHediff</defName>
+    <label>Power Armor</label>
+    <labelNoun>power armor weilder</labelNoun>
+    <description>[PAWN_nameDef] is wearing power armor.</description>
+    <comps>
+      <li Class="HediffCompProperties_ReactOnDamage">
+        <damageDefIncoming>EMP</damageDefIncoming>
+        <createHediff>PowerArmorOverload</createHediff>
+      </li>
+    </comps>
+  </HediffDef>
+
+  
+  
+</Defs>

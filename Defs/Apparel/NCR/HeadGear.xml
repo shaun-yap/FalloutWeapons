@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>FCP_NCR_HG_BeretBrown</defName>
+    <label>NCR tan beret</label>
+    <description>A beret is a soft round cap, usually of wool felt, with a flat crown that tilts to one side.</description>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Apparel/NCR/Headgear/NCR_Beret/NCR_Beret_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.30</ArmorRating_Heat>
+      <Insulation_Cold>2</Insulation_Cold>    
+	  <Insulation_Heat>6</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>   
+	<equippedStatOffsets>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <costList>
+      <Cloth>65</Cloth>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/NCR/Headgear/NCR_Beret/NCR_Beret</wornGraphicPath>
+      <layers>
+		<li>Overhead</li>
+      </layers>
+      <tags>
+        <li>NCRBeret</li>  
+		<li>NCR</li>
+		<li>NCRHat</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>	
+  </ThingDef>
+  
+    <ThingDef ParentName="ArmorMachineableBase">
+    <defName>FCP_NCR_HG_1ReconBeret</defName>
+    <label>1st Recon beret</label>
+    <description>A beret is a soft round cap, usually of wool felt, with a flat crown that tilts to one side. The 1st Recon beret is a piece of headwear in Fallout: New Vegas. It is used primarily by NCR snipers.</description>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Apparel/NCR/Headgear/NCR_BeretRed/NCR_BeretRed_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.30</ArmorRating_Heat>
+      <Insulation_Cold>2</Insulation_Cold>    
+	  <Insulation_Heat>6</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>   
+	<equippedStatOffsets>	
+		<ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <costList>
+      <Cloth>85</Cloth>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/NCR/Headgear/NCR_BeretRed/NCR_BeretRed</wornGraphicPath>
+      <layers>
+		<li>Overhead</li>
+      </layers>
+      <tags>
+        <li>ReconSniper</li>  
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>	
+  </ThingDef>
+  
+    
+    <ThingDef ParentName="ArmorMachineableBase">
+    <defName>FCP_NCR_HG_GreenBeret</defName>
+    <label>officer's beret</label>
+    <description>A beret is a soft round cap, usually of wool felt, with a flat crown that tilts to one side. The New California Republic use green berets to identify officers of the New California Republic Army. The beret seems to be camouflaged in various shades of green.</description>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Apparel/NCR/Headgear/NCR_Beret_Green/NCR_Beret_Green_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.30</ArmorRating_Heat>
+      <Insulation_Cold>2</Insulation_Cold>    
+	  <Insulation_Heat>6</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>   
+	<equippedStatOffsets>	
+      <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <costList>
+      <Cloth>85</Cloth>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/NCR/Headgear/NCR_Beret_Green/NCR_Beret_Green</wornGraphicPath>
+      <layers>
+		<li>Overhead</li>
+      </layers>
+      <tags>
+        <li>NCRGreenBeret</li>  
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>	
+  </ThingDef>
+  
+    <ThingDef Name="NCRHelmetBase" ParentName="ArmorMachineableBase" Abstract="True">
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.74</ArmorRating_Heat>
+      <Insulation_Cold>2</Insulation_Cold>    
+	  <Insulation_Heat>10</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>   
+	<equippedStatOffsets>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <costList>
+      <Cloth>40</Cloth>
+      <Steel>40</Steel>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/NCR/Headgear/NCR_Ranger_hat/NCR_Ranger_hat</wornGraphicPath>
+      <layers>
+		<li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>	
+  </ThingDef>
+  
+  
+    <!--Goggles Helmet-->
+      <ThingDef ParentName="NCRHelmetBase">
+    <defName>FCP_NCR_HG_Goggle_Hat</defName>
+    <label>goggled helmet</label>
+    <description>It is a dully colored helmet with a pair of goggles located on the brim, and a pack of Pyramid cigarettes in the loop of the helmet. It has a very rough "mass-produced" look to it, as it is issued to all NCR soldiers and MPs.</description>
+      <graphicData>
+      <texPath>Apparel/NCR/Headgear/NCR_Goggles_Helmet/NCR_Goggles_Helmet_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <apparel>
+	      <wornGraphicPath>Apparel/NCR/Headgear/NCR_Goggles_Helmet/NCR_Goggles_Helmet</wornGraphicPath>
+	  <tags>
+        <li>NCRTrooperArmor</li>  
+		<li>NCRHat</li>
+      </tags>
+	  </apparel>	
+	</ThingDef>
+	
+	<!--MP Hat-->
+        <ThingDef ParentName="NCRHelmetBase">
+    <defName>FCP_NCR_HG_MP_Hat</defName>
+    <label>goggled MP helmet</label>
+    <description>It is a dully colored helmet with a pair of goggles located on the brim, and a pack of Pyramid cigarettes in the loop of the helmet. It has a very rough "mass-produced" look to it, as it is issued to all NCR soldiers and MPs.</description>
+      <graphicData>
+      <texPath>Apparel/NCR/Headgear/NCR_MP_Hat/NCR_MP_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <apparel>
+	      <wornGraphicPath>Apparel/NCR/Headgear/NCR_MP_Hat/NCR_MP</wornGraphicPath>
+	<tags>
+        <li>NCRTrooperArmor</li>  
+        <li>NCR_MP</li>
+		<li>NCRHat</li>
+    </tags>
+	  </apparel>	
+	<equippedStatOffsets>
+      <SocialImpact>-0.05</SocialImpact>
+    </equippedStatOffsets>
+	</ThingDef>
+	
+	 <!--MP Wrap Hat-->
+	<ThingDef ParentName="NCRHelmetBase">
+    <defName>FCP_NCR_HG_MP_Hat_Wrap</defName>
+    <label>MP wrap hat</label>
+    <description>It is a dully colored helmet with a pair of goggles located on the brim, and a pack of Pyramid cigarettes in the loop of the helmet. It has a very rough "mass-produced" look to it, as it is issued to all NCR soldiers and MPs.</description>
+      <graphicData>
+      <texPath>Apparel/NCR/Headgear/NCR_Wrap_MP/NCR_Wrap_MP_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+	<statBases>
+      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.23</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.80</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>    
+	  <Insulation_Heat>12</Insulation_Heat>
+    </statBases>   
+    <apparel>
+	      <wornGraphicPath>Apparel/NCR/Headgear/NCR_Wrap_MP/NCR_Wrap_MP</wornGraphicPath>
+		<tags>
+        <li>NCRTrooperArmor</li>  
+        <li>NCR_MP</li>  
+		<li>NCRHat</li>
+     </tags>
+	 </apparel>	
+	<equippedStatOffsets>
+      <SocialImpact>-0.05</SocialImpact>
+    </equippedStatOffsets>	
+
+	</ThingDef>
+	
+	<!--Ranger Combat Helmet-->
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>FCP_NCR_HG_RangerHelmet</defName>
+    <label>ranger helmet</label>
+    <description>A military-grade armor originally used by L.A.P.D. riot squads, this combat outfit is typically worn with a matching military helmet with built-in low light optics, a combination IR/white light lamp and gas mask.</description>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Apparel/NCR/Headgear/NCR_Ranger_CombatHelmet/NCR_Ranger_CombatHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <MaxHitPoints>600</MaxHitPoints>
+      <Mass>1.36</Mass>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>0.98</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.98</ArmorRating_Heat>
+      <Insulation_Cold>2</Insulation_Cold>    
+	  <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>   
+	<equippedStatOffsets>
+      <SocialImpact>0.25</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <costList>
+      <Cloth>40</Cloth>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/NCR/Headgear/NCR_Ranger_CombatHelmet/NCR_Ranger_CombatHelmet</wornGraphicPath>
+      <layers>
+		<li>Overhead</li>
+      </layers>
+      <tags>
+        <li>NCRRangerCombatArmor</li>  
+		<li>NCRCombatArmorHelmet</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>	
+  </ThingDef>
+  
+  	<!--Ranger Patrol Hat-->
+    <ThingDef ParentName="ArmorMachineableBase">
+    <defName>FCP_NCR_HG_PatrolHat</defName>
+    <label>ranger hat</label>
+    <description>A campaign cover, also known as a "lemon squeezer" that is standard-issue to NCR patrol rangers.</description>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Apparel/NCR/Headgear/NCR_Ranger_hat/NCR_Ranger_hat_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <MaxHitPoints>600</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.30</ArmorRating_Heat>
+      <Insulation_Cold>2</Insulation_Cold>    
+	  <Insulation_Heat>12</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>   
+	<equippedStatOffsets>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <costList>
+      <Cloth>40</Cloth>
+      <Steel>40</Steel>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/NCR/Headgear/NCR_Ranger_hat/NCR_Ranger_hat</wornGraphicPath>
+      <layers>
+		<li>Overhead</li>
+      </layers>
+      <tags>
+        <li>NCRPatrolArmor</li>  
+		<li>NCRPatrolArmorHelmet</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>	
+  </ThingDef>
+
+  	<!--salvaged power helmet-->
+    <ThingDef ParentName="ArmorMachineableBase">
+    <defName>FCP_NCR_HG_SalvagedHelm</defName>
+    <label>salvaged power helmet</label>
+    <description>NCR salvaged power armor is T-45d power armor recovered by the NCR during the NCR-Brotherhood War. NCR technicians stripped out the servomotors and replaced the rad scrubbers with a custom air conditioning module, allowing it to be used by soldiers without the need of Power Armor Training.</description>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Apparel/NCR/Headgear/NCR_SalvagedPowerArmor_Helmet/NCR_SalvagedPowerArmor_Helmet_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>1.22</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.22</ArmorRating_Heat>
+      <Insulation_Cold>2</Insulation_Cold>    
+	  <Insulation_Heat>15</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>   
+    <equippedStatOffsets>
+      <MoveSpeed>-0.12</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <costList>
+      <Steel>60</Steel>    
+	  <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/NCR/Headgear/NCR_SalvagedPowerArmor_Helmet/NCR_SalvagedPowerArmor_Helmet</wornGraphicPath>
+      <layers>
+		<li>Overhead</li>
+      </layers>
+      <tags>
+        <li>NCRSalvagedPA</li>  
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>	
+  </ThingDef>
+
+
+	<!--Trooper Hat-->
+    <ThingDef ParentName="NCRHelmetBase">
+    <defName>FCP_NCR_HG_Trooper_Hat</defName>
+    <label>NCR trooper helmet</label>
+    <description>It is a dully colored helmet with a pair of goggles located on the brim, and a pack of Pyramid cigarettes in the loop of the helmet. It has a very rough "mass-produced" look to it, as it is issued to all NCR soldiers and MPs.</description>
+      <graphicData>
+      <texPath>Apparel/NCR/Headgear/NCR_Trooper_Hat/NCR_Trooper_Hat_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <apparel>
+	      <wornGraphicPath>Apparel/NCR/Headgear/NCR_Trooper_Hat/NCR_Trooper_Hat</wornGraphicPath>
+		<tags>
+        <li>NCRTrooperArmor</li>  
+		<li>NCRHat</li>
+      </tags>
+	  </apparel>	
+
+	</ThingDef>
+	
+		<!-- Wrap Helmet-->
+	<ThingDef ParentName="NCRHelmetBase">
+    <defName>FCP_NCR_HG_Trooper_Wrap_Hat</defName>
+    <label>trooper wrap helmet</label>
+    <description>It is a dully colored helmet with a pair of goggles located on the brim, and a pack of Pyramid cigarettes in the loop of the helmet. It has a very rough "mass-produced" look to it, as it is issued to all NCR soldiers and MPs.</description>
+      <graphicData>
+      <texPath>Apparel/NCR/Headgear/NCR_Wrap_Pith_Hat/NCR_Wrap_Pith_Hat_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+	<statBases>
+      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.23</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.80</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>    
+	  <Insulation_Heat>12</Insulation_Heat>
+    </statBases>   
+    <apparel>
+	      <wornGraphicPath>Apparel/NCR/Headgear/NCR_Wrap_Pith_Hat/NCR_Wrap_Pith_Hat</wornGraphicPath>
+	<tags>
+        <li>NCRTrooperArmor</li>  
+		<li>NCRHat</li>
+     </tags>
+	 </apparel>	
+	<equippedStatOffsets>
+      <SocialImpact>-0.05</SocialImpact>
+    </equippedStatOffsets>	
+
+	</ThingDef>
+	
+    <!--Goggled Wrap Helmet-->
+        <ThingDef ParentName="NCRHelmetBase">
+    <defName>FCP_NCR_HG_Goggled_Hat</defName>
+    <label>goggled wrap helmet</label>
+    <description>It is a dully colored helmet with a pair of goggles located on the brim, and a pack of Pyramid cigarettes in the loop of the helmet. It has a very rough "mass-produced" look to it, as it is issued to all NCR soldiers and MPs.</description>
+      <graphicData>
+      <texPath>Apparel/NCR/Headgear/NCR_Wrap_Pith_Hat2/NCR_Wrap_Pith_Hat2_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <apparel>
+	      <wornGraphicPath>Apparel/NCR/Headgear/NCR_Wrap_Pith_Hat2/NCR_Wrap_Pith_Hat2</wornGraphicPath>	
+	<tags>
+        <li>NCRTrooperArmor</li>  
+		<li>NCRHat</li>
+    </tags>
+    </apparel>	
+	<equippedStatOffsets>
+      <SocialImpact>-0.05</SocialImpact>
+    </equippedStatOffsets>
+
+	</ThingDef>
+	
+
+</Defs>

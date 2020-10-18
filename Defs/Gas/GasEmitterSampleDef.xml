@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>GasEmitter</defName>
+		<label>gas emitter</label>
+		<description>ffffff</description>
+		<thingClass>FalloutGasEmitter.GasEmitterBuilding</thingClass>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Buildings/Barrel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<rect>(0,0,1,0.15)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<drawerType>RealtimeOnly</drawerType>
+		<rotatable>false</rotatable>
+		<stealable>false</stealable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<statBases>
+			<Mass>1</Mass>
+			<MaxHitPoints>20</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>.1</Flammability>
+			<Beauty>-4</Beauty>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<designationCategory>Security</designationCategory>
+		<designationHotKey>Misc6</designationHotKey>
+		<building>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<comps>
+			<li Class="FalloutGasEmitter.GasEmitterProperties">
+				<gasDef>RadiationToxicGas</gasDef>
+				<ignoreWalls>True</ignoreWalls>
+				<ticksBetweenChecks>300</ticksBetweenChecks>
+				<rangeToSpread>4.5</rangeToSpread>
+				<allowClaim>False</allowClaim>  <!-- for building with thingClass FalloutGasEmitter.GasEmitterBuilding-->
+				<allowDeconstruction>False</allowDeconstruction> <!-- for building with thingClass FalloutGasEmitter.GasEmitterBuilding-->
+				<allowDestruction>False</allowDestruction>  <!-- for building with thingClass FalloutGasEmitter.GasEmitterBuilding-->
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

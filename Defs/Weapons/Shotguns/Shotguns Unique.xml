@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseGun">
+    <defName>FCP_Shotgun_SturdyShotgun</defName>
+    <label>Sturdy Shotgun</label>
+    <description>This shotgun has a lever-action (similar to the cowboy repeater) and fires a 20 gauge shotgun shell.</description>
+    <graphicData>
+      <texPath>Things/Shotguns/SturdyShotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingSetMakerTags>
+		<li>RewardSpecial</li>
+	</thingSetMakerTags>
+    <soundInteract>CaravanShotgunInteract</soundInteract>
+    <statBases>
+      <Mass>1.4</Mass>   
+	  <MarketValue>235</MarketValue>
+      <AccuracyTouch>0.415</AccuracyTouch>
+      <AccuracyShort>0.487</AccuracyShort>
+      <AccuracyMedium>0.402</AccuracyMedium>
+      <AccuracyLong>0.322</AccuracyLong>
+      <RangedWeapon_Cooldown>1.17</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+         <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SturdySturdyShotgun</defaultProjectile>
+        <warmupTime>0.4</warmupTime>
+        <range>12.9</range>    
+        <soundCast>ShotCaravanShotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SturdySturdyShotgun</defName>
+    <label>20 gauge blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>   
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>28</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+	  <!--Armor Pen??-->
+      <armorPenetrationBase>0</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>	
+	<ignoreConfigErrors>true</ignoreConfigErrors>
+        <modExtensions>
+            <li Class="ProperShotguns.ShotgunExtension">
+                <pelletCount>7</pelletCount>
+            </li>
+        </modExtensions>
+  </ThingDef>
+</Defs>

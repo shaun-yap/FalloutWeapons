@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="BaseLaserGun" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Spacer</techLevel>
+    <smeltable>true</smeltable>
+	<tradeability>Sellable</tradeability>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <statBases>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers />
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+ <!-- ====================== Laser Rifle  ===================== -->
+  <!--ThingDef ParentName="FCP_Bullet_Laser" Class="FalloutCollaborationProject.LaserBeamDef">
+    <defName>FCP_Bullet_LaserRifle</defName>
+    <label>laser shot</label>
+    <description>A focused laser beam.</description>
+    <textures>
+      <li>Things/Projectile/Shot_LaserRifle</li>
+    </textures>
+    <seam>0</seam>
+    <causefireChance>0.1</causefireChance>
+
+    <projectile>
+		<damageDef>Bullet</damageDef>
+		<damageAmountBase>12</damageAmountBase>
+		<armorPenetrationBase>0.56</armorPenetrationBase>
+		<stoppingPower>1.5</stoppingPower>
+    </projectile>
+  </ThingDef>
+  
+ <ThingDef ParentName="BaseLaserGun">
+    <defName>FCP_Gun_LaserRifle</defName>
+	<thingClass>FalloutCollaborationProject.LaserGun</thingClass>
+    <label>laser rifle</label>
+    <description>An ultratech rifle capable of emitting a concentrated beam of light with enough power to deal considerable damage over medium distance.\n\nBy using advanced battery cells, this weapon is capable of warming up, boosting the firing speed with each consecutive shot when standing still.\n\nThis weapon can overheat when fully warmed up, resulting in a small battery explosion around the user.</description>
+    <graphicData>
+		<texPath>Things/WeaponRanged/LaserRifle</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>VWE_Interact_LaserGun</soundInteract>
+    <statBases>
+		<WorkToMake>125000</WorkToMake>
+		<MarketValue>3000</MarketValue>
+		<Mass>2.6</Mass>
+			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyShort>0.83</AccuracyShort>
+			<AccuracyMedium>0.86</AccuracyMedium>
+			<AccuracyLong>0.72</AccuracyLong>
+			<RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+		<Steel>75</Steel>
+		<Plasteel>60</Plasteel>
+		<ComponentSpacer>12</ComponentSpacer>
+    </costList>
+	<techLevel>Spacer</techLevel>
+    <weaponTags Inherit="False">
+		<li>LaserGun</li>
+    </weaponTags>
+		<generateCommonality>0.1</generateCommonality>
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<label>Standard</label>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>FCP_Bullet_LaserRifle</defaultProjectile>
+			<warmupTime>2</warmupTime>
+			<range>31</range>
+			<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+			<burstShotCount>1</burstShotCount>
+			<soundCast>VWE_LaserShot_Rifle</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>14</muzzleFlashScale>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+      </li>
+    </verbs>
+	<comps>     
+	
+	</comps>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+ </ThingDef-->
+  
+</Defs>

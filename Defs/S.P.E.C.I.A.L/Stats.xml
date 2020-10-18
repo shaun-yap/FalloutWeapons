@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<StatCategoryDef>
+		<defName>SPECIAL</defName>
+		<label>S.P.E.C.I.A.L</label>
+		<displayOrder>0</displayOrder>
+		<displayAllByDefault>true</displayAllByDefault>
+	</StatCategoryDef>
+
+	<StatDef>
+		<defName>Strength</defName>
+		<workerClass>Special.StatWorker_Strength</workerClass>
+		<label>Strength</label>
+		<description>Strength is the measurement of of overall physical fitness. It has an impact on MiningSpeed, Carry Weight, Melee Damage, and Melee Armor Penetration.</description>
+		<category>SPECIAL</category>
+		<displayPriorityInCategory>10</displayPriorityInCategory>
+		<minValue>0</minValue>
+		<toStringStyle>Integer</toStringStyle>
+	</StatDef>
+
+	<StatDef>
+		<defName>Perception</defName>
+		<workerClass>Special.StatWorker_Perception</workerClass>
+		<label>Perception</label>
+		<description>Perception is the overall measure of the five senses. It has an impact on General Labor Speed, Shooting Accuracy, and Melee Hit Chance.</description>
+		<category>SPECIAL</category>
+		<displayPriorityInCategory>9</displayPriorityInCategory>
+		<minValue>0</minValue>
+		<toStringStyle>Integer</toStringStyle>
+	</StatDef>
+
+	<StatDef>
+		<defName>Endurance</defName>
+		<workerClass>Special.StatWorker_Endurance</workerClass>
+		<label>Endurance</label>
+		<description>Endurance determines a pawn's environmental resistances. It has an impact on Immunity Gain Speed, Toxic Sensitivity, and Comfty Temperature.</description>
+		<category>SPECIAL</category>
+		<displayPriorityInCategory>8</displayPriorityInCategory>
+		<minValue>0</minValue>
+		<toStringStyle>Integer</toStringStyle>
+	</StatDef>
+
+	<StatDef>
+		<defName>Charisma</defName>
+		<workerClass>Special.StatWorker_Charisma</workerClass>
+		<label>Charisma</label>
+		<description>Charisma is the measurement on how social a pawn is. It has an impact on Sell Price Factor, Social Impact, Negotiation Ability, Tame Animal Chance, Train Animal Chance, and Arrest Success Chance.</description>
+		<category>SPECIAL</category>
+		<displayPriorityInCategory>7</displayPriorityInCategory>
+		<minValue>0</minValue>
+		<toStringStyle>Integer</toStringStyle>
+	</StatDef>
+
+	<StatDef>
+		<defName>Intelligence</defName>
+		<workerClass>Special.StatWorker_Intelligence</workerClass>
+		<label>Intelligence</label>
+		<description>Intelligence is the ability to acquire and apply knowledge and skills. It has an impact on Global Learning Factor, Medical Surgery Success Chance, Medical Tend Quality, Medical Operation Speed, Drug Synthesis Speed, and Research Speed.</description>
+		<category>SPECIAL</category>
+		<displayPriorityInCategory>6</displayPriorityInCategory>
+		<minValue>0</minValue>
+		<toStringStyle>Integer</toStringStyle>
+	</StatDef>
+
+	<StatDef>
+		<defName>Agility</defName>
+		<workerClass>Special.StatWorker_Agility</workerClass>
+		<label>Agility</label>
+		<description>Agility is the measurement of moving quickly and easily. It has an impact on Melee Dodge Chance, Hunting Stealth, Move Speed, and Aiming Delay Factor.</description>
+		<category>SPECIAL</category>
+		<displayPriorityInCategory>5</displayPriorityInCategory>
+		<minValue>0</minValue>
+		<toStringStyle>Integer</toStringStyle>
+	</StatDef>
+
+	<StatDef>
+		<defName>Luck</defName>
+		<workerClass>Special.StatWorker_Luck</workerClass>
+		<label>Luck</label>
+		<description>Luck.</description>
+		<category>SPECIAL</category>
+		<displayPriorityInCategory>4</displayPriorityInCategory>
+		<minValue>0</minValue>
+		<toStringStyle>Integer</toStringStyle>
+	</StatDef>
+
+</Defs>

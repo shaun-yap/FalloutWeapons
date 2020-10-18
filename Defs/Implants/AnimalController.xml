@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<RecipeDef>
+		<defName>InstallFCP_AnimalController</defName>
+		<label>install animal controller</label>
+		<description>Installs an animal controller.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing animal brain stimulator.</jobString>
+		<workAmount>2000</workAmount>
+		<effectWorking>Surgery</effectWorking>
+		<soundWorking>Recipe_Surgery</soundWorking>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<workSkillLearnFactor>16</workSkillLearnFactor>
+		<surgerySuccessChanceFactor>1.5</surgerySuccessChanceFactor>
+		<skillRequirements>
+			<Medicine>15</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FCP_AnimalController</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>FCP_AnimalController</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>FCP_AnimalControllerHediff</addsHediff>
+	</RecipeDef>
+
+	<HediffDef>
+		<defName>FCP_AnimalControllerHediff</defName>
+		<hediffClass>FalloutCore.Hediff_ImplantTamer</hediffClass>
+		<label>animal controller</label>
+		<labelNoun>an animal controller</labelNoun>
+		<description>An installed animal controller.</description>
+		<descriptionHyperlinks>
+			<ThingDef>FCP_AnimalController</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(172,128,210)</defaultLabelColor>
+		<spawnThingOnRemoved>FCP_AnimalController</spawnThingOnRemoved>
+		<modExtensions>
+			<li Class="FalloutCore.TamingOption">
+				<letterTitle>{PAWN_kindDef} is tamed</letterTitle>
+				<letterDesc>{PAWN_kindDef} is tamed</letterDesc>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBase">
+		<defName>FCP_AnimalController</defName>
+		<label>animal controller</label>
+		<description>animal controller.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallFCP_AnimalController</RecipeDef>
+		</descriptionHyperlinks>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+			<color>(189,169,118)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>400</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>BodyPartsBionic</li>
+		</thingCategories>
+	</ThingDef>
+
+
+
+</Defs>

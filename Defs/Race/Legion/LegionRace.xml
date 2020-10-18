@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<AlienRace.ThingDef_AlienRace Name="FCPLegionRace" ParentName="HumanRace">
+    <defName>FCPLegionRace</defName>
+    <label>human</label>
+	<alienRace>
+	  <generalSettings>
+		<maleGenderProbability>1</maleGenderProbability>
+        <humanRecipeImport>true</humanRecipeImport>
+	    <allowHumanBios>true</allowHumanBios>
+            <forcedRaceTraitEntries>
+                    <li>
+                        <defName>Tough</defName>
+                        <chance>33</chance>
+                    </li>
+            </forcedRaceTraitEntries>
+				<disallowedTraits>
+				    <li>
+                        <defName>DrugDesire</defName>
+                      </li>
+					 <li>
+                        <defName>Wimp</defName>
+                    </li>
+				</disallowedTraits>
+	  </generalSettings>
+			<thoughtSettings>
+			<cannotReceiveThoughtsAtAll>false</cannotReceiveThoughtsAtAll>
+				<!--cannotReceiveThoughts>
+					<li>Outdoors</li>
+					<li>ObservedLayingRottingCorpse</li>
+				</cannotReceiveThoughts-->
+			</thoughtSettings>
+		
+	</alienRace>
+    <statBases>
+		<ToxicSensitivity Inherit="False">0.9</ToxicSensitivity>
+    </statBases>
+  </AlienRace.ThingDef_AlienRace>
+
+</Defs>

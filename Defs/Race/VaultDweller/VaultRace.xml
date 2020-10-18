@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace Name="VaultDweller" ParentName="HumanRace">
+    <defName>FCPVaultDweller</defName>
+    <label>human</label>
+	<alienRace>
+	  <generalSettings>
+		<maleGenderProbability>0.5</maleGenderProbability>
+        <humanRecipeImport>true</humanRecipeImport>
+	    <allowHumanBios>true</allowHumanBios>
+
+            <forcedRaceTraitEntries>
+                    <li>
+                        <defName>Beauty</defName>
+						<degree>-2</degree>
+                                             </li>
+            </forcedRaceTraitEntries>
+			
+				<disallowedTraits>
+                    <li>
+                        <defName>SuperImmune</defName>
+					</li>
+					</disallowedTraits>
+
+	  </generalSettings>
+
+			<thoughtSettings>
+			<cannotReceiveThoughtsAtAll>false</cannotReceiveThoughtsAtAll>
+				<cannotReceiveThoughts>
+					<li>ObservedLayingRottingCorpse</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+			
+	</alienRace>
+	
+    <statBases>
+		<ToxicSensitivity Inherit="False">1.5</ToxicSensitivity>
+		<ImmunityGainSpeed Inherit="False">0.9</ImmunityGainSpeed>
+
+    </statBases>
+
+  </AlienRace.ThingDef_AlienRace>
+
+	<!--TraitDef>
+		<defName>Ghoul</defName>
+		<commonality>1</commonality>
+		<degreeDatas>
+			<li>
+				<label>Simple minded</label>
+				<description></description>
+			</li>
+		</degreeDatas>
+	</TraitDef-->
+
+
+</Defs>

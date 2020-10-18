@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+	<MutationProgress>Mutation progress: </MutationProgress>
+
+	<TakePawnToFEVVAt>Take to FEV vat</TakePawnToFEVVAt>
+	
+	<TakePawnToStasis>Take to stasis</TakePawnToStasis>
+	
+	<NoStasisToTake>No stasis to take</NoStasisToTake>
+
+	<FoundCityFCPMegatonFaction>Found a city {0}</FoundCityFCPMegatonFaction>
+
+	<FoundCityDescFCPMegatonFaction>You see a large metal wall surrounding what looks to be of a city</FoundCityDescFCPMegatonFaction>
+  
+	<FC_PawnMutatesToGhoul>Ghoulification</FC_PawnMutatesToGhoul>
+	<FC_PawnMutatesToGhoulDesc>Because of the lethal amounts of radiation that {PAWN} has sustained, {PAWN} has transformed into a ghoul</FC_PawnMutatesToGhoulDesc>
+  </LanguageData>

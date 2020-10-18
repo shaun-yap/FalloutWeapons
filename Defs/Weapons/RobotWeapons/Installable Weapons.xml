@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+      <!-- Plasma Caster -->
+	<!--HediffDef Name="RobotWeaponPlasmaCaster" ParentName="AddedBodyPartBase">
+		<defName>RobotWepPlasmaCaster</defName>
+		<label>Robot Plasma Caster</label>  
+		<description>The plasma caster is a powerful energy weapon. Compared to its rifle-based counterpart, it outclasses it in both damage and fire rate. It pays for these advantages however in weight and accuracy: its far larger base spread is compounded by the insane skill and strength requirements to handle this weapon, and at 20 pounds it is the heaviest energy weapon.</description>
+		<labelNoun>a robot mounted plasma caster</labelNoun>
+		<stages>
+			<li>
+				<statOffsets>
+						<RangedWeapon_Cooldown>1.96</RangedWeapon_Cooldown>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="OrenoPCF.HediffCompProperties_VerbGiverExtended">
+				<toggleLabel>mounted plasma caster</toggleLabel>
+				<toggleDescription>A robot mounted plasma rifle meant to destroy all communists.</toggleDescription>
+				<toggleIconPath>Things/EnergyHeavyWeapons/PlasmaCaster</toggleIconPath>
+				<toggleIconAngle>45.0</toggleIconAngle>
+				<verbs>
+					<li>
+						<label>plasma caster</label>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>0.64</accuracyTouch>
+						<accuracyShort>0.76</accuracyShort>
+						<accuracyMedium>0.71</accuracyMedium>
+						<accuracyLong>0.61</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>FCP_Bullet_HeavyEnergy_PlasmaCaster</defaultProjectile>
+						<warmupTime>1.85</warmupTime>
+						<range>30.9</range>
+						<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+						<burstShotCount>1</burstShotCount>
+						<soundCast>ShotPlasmaCaster</soundCast>
+						<soundCastTail>GunTail_Medium</soundCastTail>
+						<muzzleFlashScale>9</muzzleFlashScale>
+					</li>
+				</verbs>
+				<verbsProperties>
+					<li>
+						<label>plasma caster</label>
+						<description>The plasma caster is a powerful energy weapon. Compared to its rifle-based counterpart, it outclasses it in both damage and fire rate. It pays for these advantages however in weight and accuracy: its far larger base spread is compounded by the insane skill and strength requirements to handle this weapon, and at 20 pounds it is the heaviest energy weapon.</description>
+						<uiIconPath>Effects/Plasma/PlasmaA</uiIconPath>
+					</li>
+				</verbsProperties>
+			</li>
+		</comps>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>
+		</addedPartProps>
+					<modExtensions>
+						<li Class="FCPEnergyFilth.DeathEffectModExtension">
+						<effectChance>0.60</effectChance>
+						</li>
+					</modExtensions>
+	</HediffDef-->
+    
+	<!-- Flamethrower -->
+	<HediffDef Name="RobotWeaponFlamethrower" ParentName="AddedBodyPartBase">
+		<defName>FCPRobotMountedFlamethrower</defName>
+		<label>Robot Flamethrower</label>  
+		<description>A robot mounted flamethrower meant to fend off nearby attackers.</description>
+		<labelNoun>a robot mounted flamethrower</labelNoun>
+		<comps>
+			<li Class="OrenoPCF.HediffCompProperties_VerbGiverExtended">
+				<toggleLabel>mounted flamethrower</toggleLabel>
+				<toggleDescription>A robot mounted flamethrower meant to fend off nearby attackers.</toggleDescription>
+				<toggleIconPath>Things/EnergyHeavyWeapons/Flamer</toggleIconPath>
+				<toggleIconAngle>45.0</toggleIconAngle>
+				<verbs>
+					<li>
+						<label>flamethrower</label>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>0.85</accuracyTouch>
+						<accuracyShort>0.50</accuracyShort>
+						<accuracyMedium>0.50</accuracyMedium>
+						<accuracyLong>0.40</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>FCP_Bullet_FlamerFuel</defaultProjectile>
+						<warmupTime>0.8</warmupTime>
+						<range>12.9</range>
+						<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+						<burstShotCount>3</burstShotCount>
+						<soundCast>Shot_IncendiaryLauncher</soundCast>
+						<soundCastTail>GunTail_Light</soundCastTail>
+						<muzzleFlashScale>25</muzzleFlashScale>
+					</li>
+				</verbs>
+				<verbsProperties>
+					<li>
+						<label>flamethrower</label>
+						<description>A robot mounted flamethrower meant to fend off nearby attackers.</description>
+						<uiIconPath>Effects/Fire/FireA</uiIconPath>
+					</li>
+				</verbsProperties>
+			</li>
+		</comps>
+		<!--spawnThingOnRemoved>RobotWepPlasmaCaster</spawnThingOnRemoved-->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+    
+	<!-- Plasma Rifle -->
+	<HediffDef Name="RobotWeaponPlasmaRifle" ParentName="AddedBodyPartBase">
+		<defName>FCPRobotMountedPlasmaRifle</defName>
+		<label>Robot Plasma Rifle</label>  
+		<description>A robot mounted plasma rifle meant to goopify all communists.</description>
+		<labelNoun>a robot mounted plasma rifle</labelNoun>
+		<stages>
+			<li>
+				<!--capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.07</offset>
+					</li>
+				</capMods-->
+				<statOffsets>
+						<RangedWeapon_Cooldown>1.96</RangedWeapon_Cooldown>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="OrenoPCF.HediffCompProperties_VerbGiverExtended">
+				<toggleLabel>mounted plasma rifle</toggleLabel>
+				<toggleDescription>A robot mounted plasma rifle meant to goopify all communists.</toggleDescription>
+				<toggleIconPath>Things/EnergyHeavyWeapons/PlasmaCaster</toggleIconPath>
+				<toggleIconAngle>45.0</toggleIconAngle>
+				<verbs>
+					<li>
+						<label>assault rifle</label>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>0.64</accuracyTouch>
+						<accuracyShort>0.79</accuracyShort>
+						<accuracyMedium>0.89</accuracyMedium>
+						<accuracyLong>0.79</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>FCP_Bullet_HeavyEnergy_PlasmaCaster</defaultProjectile>
+						<warmupTime>0.8</warmupTime>
+						<range>30.9</range>
+						<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+						<burstShotCount>1</burstShotCount>
+						<soundCast>ShotPlasmaCaster</soundCast>
+						<soundCastTail>GunTail_Medium</soundCastTail>
+						<muzzleFlashScale>15</muzzleFlashScale>
+					</li>
+				</verbs>	
+					<!--modExtensions>
+						<li Class="FCPEnergyFilth.DeathEffectModExtension">
+						<effectChance>0.60</effectChance>
+						</li>
+					</modExtensions-->
+				<verbsProperties>
+					<li>
+						<label>plasma rifle</label>
+						<description>A robot mounted plasma rifle meant to goopify all communists.</description>
+						<uiIconPath>Effects/Plasma/PlasmaA</uiIconPath>
+					</li>
+				</verbsProperties>
+			</li>
+		</comps>
+		<!--spawnThingOnRemoved>RobotWepPlasmaCaster</spawnThingOnRemoved-->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<!-- Laser Pistol -->
+	<HediffDef Name="RobotWeaponLaserPistol" ParentName="AddedBodyPartBase">
+		<defName>RobotWepLaserPistol</defName>
+		<label>Robot laser pistol</label>
+		<description>A robot mounted laser pistol meant to vaporize all enemies.</description>
+		<labelNoun>a robot mounted plasma caster</labelNoun>
+		<stages>
+			<li>
+				<!--capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.07</offset>
+					</li>
+				</capMods-->
+				<statOffsets>
+						<RangedWeapon_Cooldown>0.72</RangedWeapon_Cooldown>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="OrenoPCF.HediffCompProperties_VerbGiverExtended"> 
+				<toggleLabel>mounted laser pistol</toggleLabel>
+				<toggleDescription>A robot mounted laser pistol meant to vaporize all enemies.</toggleDescription>
+				<toggleIconPath>Things/EnergyPistols/LaserPistol</toggleIconPath>
+				<toggleIconAngle>45.0</toggleIconAngle>
+				<verbs>
+					<li>
+						<label>laser pistol</label>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>0.92</accuracyTouch>
+						<accuracyShort>0.855</accuracyShort>
+						<accuracyMedium>0.565</accuracyMedium>
+						<accuracyLong>0.465</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>FCPRobotLaserPistol</defaultProjectile>
+						<warmupTime>0.3</warmupTime>
+						<range>22.9</range>
+						<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+						<burstShotCount>1</burstShotCount>
+						<soundCast>ShotLaserPistol</soundCast>
+						<soundCastTail>GunTail_Light</soundCastTail>
+						<muzzleFlashScale>20</muzzleFlashScale>
+					</li>
+				</verbs>
+				<verbsProperties>
+					<li>
+						<label>laser pistol</label>
+						<description>A robot mounted laser pistol meant to vaporize all enemies.</description>
+						<uiIconPath>Effects/LaserSkinny</uiIconPath>
+					</li>
+				</verbsProperties>
+			</li>
+		</comps>
+		<!--spawnThingOnRemoved>RobotWepPlasmaCaster</spawnThingOnRemoved-->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<!-- 9mm SMG -->
+	<HediffDef Name="RobotWeaponMachineGun" ParentName="AddedBodyPartBase">
+		<defName>FCPRobotMountedMachineGun</defName>
+		<label>Robot 10mm SMG</label>  
+		<description>A robot mounted submachine gun meant to disperse crowds.</description>
+		<labelNoun>a robot mounted 9mm SMG</labelNoun>
+		<stages>
+			<li>
+				<!--capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.07</offset>
+					</li>
+				</capMods-->
+				<statOffsets>
+						<RangedWeapon_Cooldown>2.13</RangedWeapon_Cooldown>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="OrenoPCF.HediffCompProperties_VerbGiverExtended">
+				<toggleLabel>mounted 10mm SMG</toggleLabel>
+				<toggleDescription>A robot mounted submachine gun meant to disperse crowds.</toggleDescription>
+				<toggleIconPath>Things/SMGs/9mmSMG</toggleIconPath>
+				<toggleIconAngle>45.0</toggleIconAngle>
+				<verbs>
+					<li>
+						<label>Robot 10mm SMG</label>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>0.85</accuracyTouch>
+						<accuracyShort>0.60</accuracyShort>
+						<accuracyMedium>0.30</accuracyMedium>
+						<accuracyLong>0.15</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_9mmSMG</defaultProjectile>
+						<warmupTime>0.5</warmupTime>
+						<range>22.9</range>
+						<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+						<burstShotCount>9</burstShotCount>
+						<soundCast>Shot9mmSMG</soundCast>
+						<soundCastTail>GunTail_Light</soundCastTail>
+						<muzzleFlashScale>9</muzzleFlashScale>
+					</li>
+				</verbs>
+				<verbsProperties>
+					<li>
+						<label>Robot 10mm SMG</label>
+						<description>A robot mounted submachine gun meant to disperse crowds.</description>
+						<uiIconPath>Things/Projectile/Bullet_Small</uiIconPath>
+					</li>
+				</verbsProperties>
+			</li>
+		</comps>
+		<!--spawnThingOnRemoved>RobotWepPlasmaCaster</spawnThingOnRemoved-->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<!-- gatling laser -->
+	<HediffDef Name="RobotWeaponGatlingLaser" ParentName="AddedBodyPartBase">
+		<defName>FCPRobotMountedGatlingLaser</defName>
+		<label>Robot gatling laser</label>  
+		<description>A robot mounted gatling laser meant to ashify crowds.</description>
+		<labelNoun>a robot mounted gatling laser</labelNoun>
+		<stages>
+			<li>
+				<!--capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.07</offset>
+					</li>
+				</capMods-->
+				<statOffsets>
+						<RangedWeapon_Cooldown>2.13</RangedWeapon_Cooldown>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="OrenoPCF.HediffCompProperties_VerbGiverExtended">
+				<toggleLabel>mounted gatling laser</toggleLabel>
+				<toggleDescription>A robot mounted gatling laser meant to ashify crowds.</toggleDescription>
+				<toggleIconPath>Things/EnergyHeavyWeapons/GatlingLaser</toggleIconPath>
+				<toggleIconAngle>0</toggleIconAngle>
+				<verbs>
+					<li>
+						<label>Robot gatling laser</label>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>0.195</accuracyTouch>
+						<accuracyShort>0.295</accuracyShort>
+						<accuracyMedium>0.295</accuracyMedium>
+						<accuracyLong>0.225</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>FCP_Bullet_HeavyEnergyLaserGatling</defaultProjectile>
+						<warmupTime>2</warmupTime>
+						<range>30.9</range>
+						<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+						<burstShotCount>44</burstShotCount>
+						<soundCast>ShotLaserRCW</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>9</muzzleFlashScale>
+					</li>
+				</verbs>
+				<verbsProperties>
+					<li>
+						<label>Robot gatling laser</label>
+						<description>A robot mounted gatling laser meant to ashify crowds.</description>
+						<uiIconPath>Effects/LaserSkinny</uiIconPath>
+					</li>
+				</verbsProperties>
+			</li>
+		</comps>
+		<!--spawnThingOnRemoved>RobotWepPlasmaCaster</spawnThingOnRemoved-->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>
+		</addedPartProps>	
+					<modExtensions>
+						<li Class="FCPEnergyFilth.DeathEffectModExtension">
+						<effectChance>0.60</effectChance>
+						</li>
+						<!--li Class="FalloutCollaborationProject.BarrelLength">
+						<barrelLength>0.60</barrelLength>
+						</li-->
+					</modExtensions>
+	</HediffDef>
+
+	<!-- Minigun -->
+	<HediffDef Name="RobotWeaponMiniGun" ParentName="AddedBodyPartBase">
+		<defName>FCPRobotMountedMiniGun</defName>
+		<label>Robot minigun</label>  
+		<description>A robot mounted minigun meant to decimate crowds.</description>
+		<labelNoun>a robot mounted minigun</labelNoun>
+		<stages>
+			<li>
+				<!--capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.07</offset>
+					</li>
+				</capMods-->
+				<statOffsets>
+						<RangedWeapon_Cooldown>20.13</RangedWeapon_Cooldown>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="OrenoPCF.HediffCompProperties_VerbGiverExtended">
+				<toggleLabel>mounted minigun</toggleLabel>
+				<toggleDescription>A robot mounted minigun meant to decimate crowds.</toggleDescription>
+				<toggleIconPath>Things/HeavyWeapons/Minigun</toggleIconPath>
+				<toggleIconAngle>45.0</toggleIconAngle>
+				<verbs>
+					<li>
+						<label>Robot minigun</label>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>0.152</accuracyTouch>
+						<accuracyShort>0.252</accuracyShort>
+						<accuracyMedium>0.252</accuracyMedium>
+						<accuracyLong>0.182</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_HeavyWeaponMinigun</defaultProjectile>
+						<warmupTime>6</warmupTime>
+						<range>30.9</range>
+						<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+						<burstShotCount>30</burstShotCount>
+						<soundCast>Shot_Minigun</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>9</muzzleFlashScale>
+					</li>
+				</verbs>
+				<verbsProperties>
+					<li>
+						<label>Robot minigun</label>
+						<description>A robot mounted minigun meant to decimate crowds.</description>
+						<uiIconPath>Things/Projectile/Bullet_Small</uiIconPath>
+					</li>
+				</verbsProperties>
+			</li>
+		</comps>
+		<!--spawnThingOnRemoved>RobotWepPlasmaCaster</spawnThingOnRemoved-->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<!-- Missile Launcher -->
+	<!--HediffDef Name="RobotWeaponMissileLauncher" ParentName="AddedBodyPartBase">
+		<defName>FCPRobotMountedMissileLauncherRight</defName>
+		<label>Robot missile launcher</label>  
+		<description>A robot mounted missile launcher meant to destroy armies.</description>
+		<labelNoun>a robot mounted missile launcher</labelNoun>
+		<stages>
+			<li>
+				<statOffsets>
+						<RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="OrenoPCF.HediffCompProperties_VerbGiverExtended">
+				<toggleLabel>mounted missile launcher</toggleLabel>
+				<toggleDescription>A robot mounted missile launcher meant to destroy armies.</toggleDescription>
+				<toggleIconPath>Things/EnergyHeavyWeapons/GatlingLaser</toggleIconPath>
+				<toggleIconAngle>0</toggleIconAngle>
+				<verbs>
+					<li>
+						<label>Robot missile launcher</label>
+						<verbClass>Verb_ShootOneUse</verbClass>
+						<accuracyTouch>0.9</accuracyTouch>
+						<accuracyShort>0.9</accuracyShort>
+						<accuracyMedium>0.64</accuracyMedium>
+						<accuracyLong>0.54</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>FCP_Projectile_MissileLauncher</defaultProjectile>
+						<warmupTime>4.5</warmupTime>
+						<range>35.9</range>
+						<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+						<burstShotCount>1</burstShotCount>
+						<soundCast>ShotMissileLauncher</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>0</muzzleFlashScale>   
+						<targetParams>
+							<canTargetLocations>true</canTargetLocations>
+						</targetParams>
+					</li>
+				</verbs>  
+				<verbsProperties>
+					<li>
+						<label>Robot missile launcher</label>
+						<description>A robot mounted missile launcher meant to destroy armies.</description>
+						<uiIconPath>Things/Projectile/Rocket_Big</uiIconPath>
+					</li>
+				</verbsProperties>
+			</li>
+
+		</comps>
+		<spawnThingOnRemoved>MountedMissileLauncher</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>
+		</addedPartProps>
+	</HediffDef-->
+
+	<HediffDef ParentName="RobotWeaponPlasmaCaster">
+		<defName>RobotWepPlasmaCasterOffHand</defName>
+	</HediffDef>
+
+	<HediffDef ParentName="RobotWeaponFlamethrower">
+		<defName>RobotWepFlamethrowerOffHand</defName>
+	</HediffDef>
+
+	<HediffDef ParentName="RobotWeaponPlasmaRifle">
+		<defName>RobotWepPlasmaRifleOffHand</defName>
+	</HediffDef>
+
+	<HediffDef ParentName="RobotWeaponLaserPistol">
+		<defName>RobotWepLaserPistolOffHand</defName>
+	</HediffDef>
+
+	<HediffDef ParentName="RobotWeaponMachineGun">
+		<defName>RobotWepMachineGunOffHand</defName>
+	</HediffDef>
+
+	<HediffDef ParentName="RobotWeaponGatlingLaser">
+		<defName>RobotWepGatlingLaserOffHand</defName>
+	</HediffDef>
+
+	<HediffDef ParentName="RobotWeaponMiniGun">
+		<defName>RobotWepMiniGunOffHand</defName>
+	</HediffDef>
+	
+	<!--HediffDef ParentName="RobotWeaponMissileLauncher">
+		<defName>FCPRobotMountedMissileLauncherOffHand</defName>
+	</HediffDef-->
+	
+ </Defs>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.BackstoryDef>
+    <defName>FCP_Companion_Charon_Child</defName>
+    <title>Child Soldier</title>
+	<titleShort>Soldier</titleShort>
+    <baseDescription>[PAWN_nameDef] was raised by a group of people who brainwashed him into obeying whoever has his contract.[PAWN_nameDef] was not a slave, he deserved his "employment".</baseDescription>
+	<slot>Childhood</slot>
+    <skillGains>
+	  <li>
+        <defName>Shooting</defName>
+        <amount>5</amount>
+      </li>
+     </skillGains>
+	   
+	<spawnCategories>
+	  <li>FCP_Charon</li>
+    </spawnCategories>
+			
+	<workDisables>
+
+    </workDisables>
+
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>FCP_Companion_Charon_Adult</defName>
+    <title>Endentured Bodyguard</title>
+	<titleShort>Bodyguard</titleShort>
+    <baseDescription>[PAWN_nameDef] is a quiet and intimidating ghoul, [PAWN_nameDef] is a personal bodyguard and soldier. He always leaves packed with weaponry, and returns with a bag of caps. [PAWN_nameDef] says that he is only good for combat services and that he is "nobody's errand boy."</baseDescription>
+	<slot>Adulthood</slot>
+	
+	<skillGains>
+	  <li>
+        <defName>Shooting</defName>
+        <amount>5</amount>
+      </li>  
+	  <li>
+        <defName>Melee</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+
+	<spawnCategories>
+		<li>FCP_Charon</li>
+    </spawnCategories>
+			
+	<workDisables>
+		<li>Social</li>
+		<li>ManualDumb</li>
+		<li>Mining</li>		
+		<li>Crafting</li>
+		<li>Artistic</li>
+		<li>Caring</li>
+		<li>ManualSkilled</li>
+		<li>PlantWork</li>
+		<li>Crafting</li>
+		<li>Intellectual</li>
+		<li>Hauling</li>
+		<li>Animals</li>
+    </workDisables>
+	
+		<forcedHediffs>
+		<li>CharonRestless</li>
+		</forcedHediffs>
+
+</AlienRace.BackstoryDef>
+
+
+ <HediffDef> 
+ <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+    <defName>CharonRestless</defName>
+    <label>Restless</label>
+	<description>[PAWN_nameDef] never sleeps - a strange trait even for a ghoul.</description>
+    <labelNoun>[PAWN_nameDef] never sleeps.</labelNoun>
+    <stages>
+		        <li>
+          <restFallFactor>0</restFallFactor>
+				</li>
+    </stages>
+  </HediffDef>
+
+</Defs>

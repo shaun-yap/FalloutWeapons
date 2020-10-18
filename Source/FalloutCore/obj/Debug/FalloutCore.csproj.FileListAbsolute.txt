@@ -1,0 +1,12 @@
+D:\GAMES\RimWorld\Mods\FalloutCore\Assemblies\FalloutCore.dll
+D:\GAMES\RimWorld\Mods\FalloutCore\Assemblies\FalloutCore.pdb
+D:\GAMES\RimWorld\Mods\FalloutCore\Source\FalloutCore\obj\Debug\FalloutCore.csprojAssemblyReference.cache
+D:\GAMES\RimWorld\Mods\FalloutCore\Source\FalloutCore\obj\Debug\FalloutCore.csproj.CoreCompileInputs.cache
+D:\GAMES\RimWorld\Mods\FalloutCore\Source\FalloutCore\obj\Debug\FalloutCore.dll
+D:\GAMES\RimWorld\Mods\FalloutCore\Source\FalloutCore\obj\Debug\FalloutCore.pdb
+C:\GAMES\Rimworld\Mods\FalloutCore\Assemblies\FalloutCore.dll
+C:\GAMES\Rimworld\Mods\FalloutCore\Assemblies\FalloutCore.pdb
+C:\GAMES\Rimworld\Mods\FalloutCore\Source\FalloutCore\obj\Debug\FalloutCore.csprojAssemblyReference.cache
+C:\GAMES\Rimworld\Mods\FalloutCore\Source\FalloutCore\obj\Debug\FalloutCore.csproj.CoreCompileInputs.cache
+C:\GAMES\Rimworld\Mods\FalloutCore\Source\FalloutCore\obj\Debug\FalloutCore.dll
+C:\GAMES\Rimworld\Mods\FalloutCore\Source\FalloutCore\obj\Debug\FalloutCore.pdb

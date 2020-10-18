@@ -1,0 +1,77 @@
+<Defs>
+
+<ThingDef ParentName="PlantBase">
+			<defName>PlantWildRazorgrain</defName>
+			<label>Wild Razorgrain Plant</label>
+			<description>It's a toothy grain that we may be able to grind in order to replace wheat, which is untenable in the Wasteland.</description>
+			<statBases>
+				<MaxHitPoints>100</MaxHitPoints>
+				<Nutrition>0.05</Nutrition>
+			</statBases>
+			<graphicData>
+				<texPath>Things/Crops/Plants/RazorgrainPlant</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+				<selectable>true</selectable>
+			<pathCost>10</pathCost>
+			<ingestible/>
+			<plant>
+				<fertilitySensitivity>0.6</fertilitySensitivity>
+				<dieIfLeafless>true</dieIfLeafless>
+				<harvestYield>12</harvestYield>
+				<harvestWork>600</harvestWork>
+				<harvestTag>Standard</harvestTag>
+				<harvestAfterGrowth>0.30</harvestAfterGrowth>
+				<fertilityMin>0.5</fertilityMin>
+				<harvestedThingDef>Razorgrain</harvestedThingDef>
+				<wildClusterRadius></wildClusterRadius>
+				<wildClusterWeight>60</wildClusterWeight>
+				<topWindExposure>0.1</topWindExposure>
+				<growDays>6</growDays>
+				<visualSizeRange>0.3~1.05</visualSizeRange>
+				<purpose>Food</purpose>
+			</plant>
+</ThingDef>
+
+
+
+  <ThingDef ParentName="PlantBase">
+    <defName>PlantWildMutfruit</defName>
+    <label>Wild Mutfruit Plant</label>
+    <description>Mutfruit or Malus maatta, is a mutated species of apple. Like its ancestor, cultivated worldwide for its sweet taste and culinary properties, the mutfruit has gained an enduring popularity across the wasteland thanks to the mutfruit plant's hardiness and tolerance for a broad variety of soils. Though its fruit is mutated and strangely shaped compared to the apple,it remains a popular cultivar among wasteland farmers and is a staple element of many wasteland dishes.</description>
+    <statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>1.5</Beauty>
+			<Nutrition>0.08</Nutrition>
+	</statBases>
+    <graphicData>
+      <texPath>Things/Crops/Plants/MutfruitPlant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.2, 0.6, 0.2)</volume>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>30</pathCost>
+    <ingestible />
+    <plant>
+      <fertilitySensitivity>0.5</fertilitySensitivity>
+      <growDays>6</growDays>
+      <harvestTag>Standard</harvestTag>
+      <harvestAfterGrowth>0.30</harvestAfterGrowth>
+      <harvestedThingDef>RawMutfruit</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <harvestWork>300</harvestWork>
+      <visualSizeRange>0.3~1.05</visualSizeRange>
+      <topWindExposure>0.3</topWindExposure>
+      <wildClusterRadius>8</wildClusterRadius>
+      <wildClusterWeight>300</wildClusterWeight>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+
+
+</Defs>
