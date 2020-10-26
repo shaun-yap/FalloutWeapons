@@ -1,10 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Fallout Core - Weapons</name>
-  <author>ShaunYap</author>
-  <supportedVersions>
-    <li>1.2</li>
-  </supportedVersions>
-  <description>Placeholder</description>
+	<name>Fallout Weapons</name>
+	<author>WinnieTheJinPing</author>
+	<supportedVersions>
+	<li>1.1</li>
+	<li>1.2</li>
+	</supportedVersions>
+	<packageId>WinnieTheJinPing.ModName</packageId>
+	<description>
+Discord for support/suggestions: https://discord.gg/Jdj2F2t
+
+Desc
+
+Discord for support/suggestions: https://discord.gg/Jdj2F2t
+If you enjoyed this mod, give it a thumbs up. It motivates me to work on it more
+</description>
+	<!-- <loadAfter>
+		<li>UnlimitedHugs.HugsLib</li>
+	</loadAfter> -->
 </ModMetaData>

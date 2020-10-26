@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
-  <JobDef>
-		<defName>FC_AnimalRangeAttack</defName>
-		<driverClass>FalloutCore.JobDriver_AnimalRangeAttack</driverClass>
-		<reportString>attacking TargetA.</reportString>
-	</JobDef>
-</Defs>
