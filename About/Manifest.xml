@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+  <identifier>FalloutWeapons</identifier>
+  <version>0.0.0.2</version> <!-- 0(Major).0(Minor).0(Beta).0(Internal) -->
+  <dependencies>
+    <!-- <li>2009463077</li> --> <!-- Harmony -->
+  </dependencies>
+  <incompatibleWith>
+  </incompatibleWith>
+  <loadBefore></loadBefore>
+  <loadAfter>
+  </loadAfter>
+  <suggests>
+  </suggests>
+  <showCrossPromotions>true</showCrossPromotions>
+  <manifestUri> <!-- https://raw.githubusercontent.com/CombatExtended-Continued/CombatExtended/Development/About/Manifest.xml --> </manifestUri>
+  <downloadUri> <!-- https://github.com/CombatExtended-Continued/CombatExtended/releases/latest --> </downloadUri>
+</Manifest>

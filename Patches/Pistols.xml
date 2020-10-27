@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Patch>
+        <Operation Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+                <li Class="CombatExtended.PatchOperationFindMod">
+                    <modName>Combat Extended</modName>
+                </li>
+
+                <!-- 10mm (ROUGH) -->
+                <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                    <defName>Gun_FW_10mm</defName>
+                    <statBases>
+                        <Mass>1.11</Mass> <!-- slight reduction from base -->
+                        <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown> <!-- slight reduction -->
+                        <SightsEfficiency>0.8</SightsEfficiency>
+                        <ShotSpread>0.10</ShotSpread>
+                        <SwayFactor>1.05</SwayFactor>
+                        <Bulk>2.10</Bulk>
+                        <!-- <WorkToMake>7000</WorkToMake> -->
+                    </statBases>
+                    <!-- <costList>
+                        <Steel>25</Steel>
+                        <ComponentIndustrial>3</ComponentIndustrial>
+                    </costList> -->
+                    <Properties>
+                        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                        <hasStandardCommand>true</hasStandardCommand>
+                        <defaultProjectile>Bullet_10mmAuto_FMJ</defaultProjectile>
+                        <warmupTime>0.6</warmupTime>
+                        <range>15</range>
+                        <!-- I don't see a point in redefining sounds
+                        <soundCast>Shot_Autopistol</soundCast>
+                        <soundCastTail>GunTail_Light</soundCastTail>
+                        <muzzleFlashScale>9</muzzleFlashScale>
+                        -->
+                    </Properties>
+                    <AmmoUser>
+                        <magazineSize>12</magazineSize>
+                        <reloadTime>1</reloadTime>
+                        <ammoSet>AmmoSet_10mmAuto</ammoSet>
+                    </AmmoUser>
+                    <FireModes>
+                        <aiUseBurstMode>FALSE</aiUseBurstMode>
+                    </FireModes>
+                    <weaponTags>
+                        <li>CE_Sidearm</li>
+                        <li>CE_AI_Pistol</li>
+                        <li>CE_OneHandedWeapon</li>
+                    </weaponTags>
+                    <!--
+                    <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+                    -->
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Gun_FW_10mm"]</xpath>
+                    <value>
+                    <li Class="CombatExtended.GunDrawExtension">
+                        <DrawSize>0.93,0.93</DrawSize>
+                        <DrawOffset>0.0,0.0</DrawOffset>
+                    </li>
+                    </value>
+                </li>
+
+            <!-- End -->
+        </operations>
+    </Operation>
+</Patch>

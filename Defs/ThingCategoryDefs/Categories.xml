@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>FWRoot</defName>
+    <label>Fallout Weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+
+  <!-- Weapons -->
+
+    <ThingCategoryDef>
+      <defName>FWMelee</defName>
+      <label>Fallout melee weapons</label>
+      <parent>FWRoot</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>FWRanged</defName>
+      <label>Fallout ranged weapons</label>
+      <parent>FWRoot</parent>
+    </ThingCategoryDef>
+<!--
+      <ThingCategoryDef>
+        <defName>Grenades</defName>
+        <label>grenades</label>
+        <parent>WeaponsRanged</parent>
+      </ThingCategoryDef>
+    -->
+</Defs>

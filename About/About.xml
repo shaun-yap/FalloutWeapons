@@ -3,19 +3,33 @@
 	<name>Fallout Weapons</name>
 	<author>WinnieTheJinPing</author>
 	<supportedVersions>
-	<li>1.1</li>
 	<li>1.2</li>
 	</supportedVersions>
 	<packageId>WinnieTheJinPing.FalloutWeapons</packageId>
 	<description>
 Discord for support/suggestions: https://discord.gg/Jdj2F2t
 
-Desc
+Fallout Weapons aims to continue the legacy left behind by Project Fallout. I'm seeking to add in weapons and solely weapons from the Fallout universe; namely New Vegas, 3, and 4. I seek to make this mod Combat Enhanced compatible from the ground up. For the time being, the patch WILL throw up errors if you don't have CE loaded. But, this is normal and the mod will work even with the errors.
+
+The graphics for the time being is meant to be a palceholder. In the future, they will be replaced. So any comments you might have for the artstyle would be greatly appreciated
+
+Future things to add include apparel, and chems. Further than that, I suggest you take a look at Fallout Core for the time being. In the future, I might invest more time into this mod.
+
+Version : 0.0.0.1 (Beta)
+
+What's in:
+- 10mm Pistol
+
+Version History
+0.0.0.1 - 0.0.1.0
+Adds in 10mm Combat Pistol.
+Adds in Categories
+
+Thanks
+to Arisher88 for the temporary graphics from Fallout Core.
+to Ashborn K9 for the temporary graphics and sounds from Project Fallout.
 
 Discord for support/suggestions: https://discord.gg/Jdj2F2t
 If you enjoyed this mod, give it a thumbs up. It motivates me to work on it more
 </description>
-	<!-- <loadAfter>
-		<li>UnlimitedHugs.HugsLib</li>
-	</loadAfter> -->
 </ModMetaData>
